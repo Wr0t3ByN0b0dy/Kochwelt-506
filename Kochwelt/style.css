@@ -42,6 +42,55 @@ h2 {
   border-bottom: 4px solid rgb(0, 128, 0);
 }
 
+
+/*Section Lust auf Neues*/
+.section-lust-auf-neues {
+background-color: rgb(240, 240, 240);
+}
+
+h2 {
+font-size: 30px;
+text-align: center;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.lust-auf-neues-div {
+display: flex;
+justify-content: space-between;
+padding-bottom: 60px;
+}
+
+.croissant-div {
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+}
+
+.croissant-pic {
+height: 150px;
+width: 150px;
+border-radius: 4px;
+object-fit: cover;
+}
+
+/*Section Pfanne vs. Wok*/
+
+.pfanne-wok-div {
+display: flex;
+}
+
+/*Section Footer*/
+
+.footer-container {
+background-color: rgb(64, 59, 59);
+height: 300px;
+margin-bottom: 10px;
+}
+
+
+
 .daily-recipe {
   padding-top: 80px;
   display: flex;
