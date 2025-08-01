@@ -1,20 +1,26 @@
-let count = 0;
+    let tabelle = document.getElementById("number-of-ingredient");
+    let zeilen = tabelle.getElementsByTagName("tr");
 
-function init(){
-    debuggerOutput('init');
-    testTwo('testTwo');
-}
+    for (let index = 0; index < zeilen.length; index++) {
+        if (index % 2 !== 1) {
+            zeilen[index].classList.add("table-bg");
+        }
+         
+    }
+    
+    function updateIngredients(event) {
+      event.preventDefault();
 
-function testOne(){
-    debuggerOutput('testOne');
-}
+      let portionen = document.getElementById('amountInput').value;
+      let mengenFelder = document.querySelectorAll('.zutaten-menge');
 
-function testTwo(text){
-    debuggerOutput('text');
-}
+      mengenFelder.forEach(feld => {
+        let basis = feld.getAttribute('data-base');
+        let zutat = feld.getAttribute('data-zutat');
+        let neueMenge = basis * portionen;
 
-function debuggerOutput(text){
-    count++;
-    let debuggerLogRef = document.getElementById('number-of-ingredient');
-    debuggerLogRef.innerHTML = count + text;
-}
+        feld.textContent = `${neueMenge} ${zutat}`;
+      });
+    }
+
+    

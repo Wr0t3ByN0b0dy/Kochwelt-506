@@ -8,7 +8,6 @@
 
     <title>Rezept</title>
 
-    <script src="zutaten_tabelle.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +15,9 @@
 </head>
 <body>
     <header class="px-160">
-      <img src="./img/logo.png" alt="Kochwelt logo" />
+      <a href="./index.html"
+        ><img src="./img/logo.png" alt="Kochwelt logo"
+      /></a>
       <nav>
         <ul class="link-list">
           <li>
@@ -25,7 +26,7 @@
           <li>
             <a class="header-link" href="#">Rezept des Tages</a>
           </li>
-          <li><a class="header-link" href="#">Kontakt</a></li>
+          <li><a class="header-link" href="./kontakt.html">Kontakt</a></li>
           <li><a class="header-link" href="#">Impressum</a></li>
         </ul>
       </nav>
@@ -33,7 +34,7 @@
 
     <main class="px-160">
         <section class="griechischer-bauernsalat">
-            <h1>Grieschischer Bauernsalat</h2>
+            <h1>Grieschischer Bauernsalat</h1>
             <img class="griechischer-bauernsalat-img" src="./img/salad.jpg" alt="salad">
 
             <small>
@@ -54,20 +55,27 @@
 
         </section>
 
-        <section>
-            <form>
-                <label for="amount">Zutaten für</label>
-                <input id="amount" type="number" value="1" min="1" required>
-                <input onclick="" type="submit" value="Portionen">
-            </form>
+        <section class="recipe-table">
+                <form class="input-button" id="portionForm" onsubmit="updateIngredients(event)">
+                <label for="amountInput">Zutaten für</label>
+                <input id="amountInput" type="number" min="1" value="1" required>
+                <button class="button-style" type="submit">Portionen</button>
+                </form>
             
-            <table id="number-of-ingredient">
-                <tr>
-                    <td>1 Salatgurke (n)</td>
-                    
-                </tr>
-              
-            </table>
+            <table id="number-of-ingredient" >
+                <tbody id="zutaten-body">
+                    <tr ><td class="zutaten-menge" data-base="1" data-zutat="Salatgurke(n)">1 Salatgurke(n)</td></tr>
+                    <tr><td class="zutaten-menge" data-base="2" data-zutat="Paprikaschot(n), rot und grün">2 Paprikaschot(n), rot und grün</td></tr>
+                    <tr ><td class="zutaten-menge" data-base="500" data-zutat="Tomate(n)">500 g Tomate(n)</td></tr>
+                    <tr><td class="zutaten-menge" data-base="2" data-zutat="Zwiebel(n)">2 Zwiebel(n)</td></tr>
+                    <tr ><td class="zutaten-menge" data-base="200" data-zutat="g Schafskäse(n)">200 g Schafskäse(n)</td></tr>
+                    <tr><td class="zutaten-menge" data-base="1" data-zutat="Glas Oliven, schwarze, ca 100g">1 Glas Oliven, schwarze, ca 100g</td></tr>
+                    <tr ><td class="zutaten-menge" data-base="1" data-zutat="Salz und Pfeffer">1 Salz und Pfeffer</td></tr>
+                    <tr><td class="zutaten-menge" data-base="1" data-zutat="Zitrone(n)">1 Zitrone(n)</td></tr>
+                    <tr><td class="zutaten-menge" data-base="125" data-zutat="ml Olivenöl">125 ml Olivenöl</td></tr>
+                    <tr><td class="zutaten-menge" data-base="1" data-zutat="Oregano">1 Oregano</td></tr>
+                </tbody>
+           </table>
         </section>
             
         <section class="prepare">
@@ -97,4 +105,5 @@
         </section>
     </main>
 </body>
+<script src="zutaten_tabelle.js"></script>
 </html>

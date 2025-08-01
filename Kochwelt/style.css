@@ -1,6 +1,7 @@
 * {
   margin: 0;
   font-family: "Raleway", sans-serif;
+  max-width: 1920px;
 }
 
 header {
@@ -135,4 +136,70 @@ small {
 
 .recipe-creator h3 {
   padding-bottom: 12px;
+}
+
+input {
+  margin-left: 12px;
+  height: 39px;
+  border-radius: 8px 0 0 8px;
+  border-color: rgb(0, 0, 0, 0.25);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.input-button{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.recipe-table label{
+  display: block;
+  margin-top: 4px;
+}
+
+.recipe-table table {
+  width: 100%;
+  padding-top: 12px;
+  border-collapse: collapse;
+}
+
+.zutaten-menge{
+  padding: 12px;
+  border-radius: 8px;
+  
+}
+
+.table-bg{
+ background-color: rgba(239, 239, 239, 255)
+}
+
+@media (max-width: 865px){
+  .px-160 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+}
+
+@media (max-width: 625px){
+ input{
+  width: 70px;
+ }
+
+ .recipe-table .button-style{
+  padding-left: 16px;
+  padding-right: 16px;
+ }
+}
+
+@media (max-width: 400px){
+  .recipe-table .button-style{
+    padding-left: 20px;
+    padding-right: 20px;
+ }
+
+ .griechischer-bauernsalat h1{
+  font-size: 23px;
+ }
 }
