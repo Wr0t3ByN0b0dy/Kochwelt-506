@@ -12,7 +12,7 @@ header {
   padding-bottom: 5px;
 }
 
-h2 {
+h1 {
   padding-bottom: 26px;
   font-size: 32px;
 }
@@ -42,57 +42,9 @@ h2 {
   border-bottom: 4px solid rgb(0, 128, 0);
 }
 
-
-/*Section Lust auf Neues*/
-.section-lust-auf-neues {
-background-color: rgb(240, 240, 240);
-}
-
-h2 {
-font-size: 30px;
-text-align: center;
-padding-top: 20px;
-padding-bottom: 20px;
-}
-
-.lust-auf-neues-div {
-display: flex;
-justify-content: space-between;
-padding-bottom: 60px;
-}
-
-.croissant-div {
-display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-}
-
-.croissant-pic {
-height: 150px;
-width: 150px;
-border-radius: 4px;
-object-fit: cover;
-}
-
-/*Section Pfanne vs. Wok*/
-
-.pfanne-wok-div {
-display: flex;
-}
-
-/*Section Footer*/
-
-.footer-container {
-background-color: rgb(64, 59, 59);
-height: 300px;
-margin-bottom: 10px;
-}
-
-
-
 .daily-recipe {
   padding-top: 80px;
+  padding-bottom: 40px;
   display: flex;
   gap: 32px;
 }
@@ -125,6 +77,72 @@ margin-bottom: 10px;
   font-size: 18px;
   cursor: pointer;
 }
+
+/*Section Lust auf Neues*/
+.section-lust-auf-neues {
+background-color: rgb(240, 240, 240);
+width: 100vw;
+margin-left: -160px;
+margin-right: -160px;
+}
+
+h2 {
+font-size: 32px;
+text-align: center;
+padding-top: 35px;
+padding-bottom: 32px;
+}
+
+.lust-auf-neues-div {
+display: flex;
+justify-content: space-between;
+padding-bottom: 85px;
+padding-left: 160px;
+padding-right: 160px;
+}
+
+.croissant-div {
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+}
+
+.croissant-pic {
+height: 250px;
+width: 250px;
+border-radius: 10px;
+object-fit: cover;
+}
+
+.text-frische-croissants {
+font-weight: 600;
+padding-top: 8px;
+}
+
+/*Section Pfanne vs. Wok*/
+
+.pfanne-wok-div {
+display: flex;
+padding-bottom: 30px;
+padding-top: 10px;
+gap: 45px;
+}
+
+p {
+font-size: 20px;
+}
+
+/*Section Footer*/
+
+.footer-container {
+background-color: rgb(64, 59, 59);
+height: 300px;
+margin-bottom: 10px;
+}
+
+
+
 
 .griechischer-bauernsalat {
   display: flex;
