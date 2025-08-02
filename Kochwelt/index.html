@@ -15,7 +15,7 @@
       <a href="./index.html"
         ><img src="./img/logo.png" alt="Kochwelt logo"
       /></a>
-      <nav>
+      <nav class="hide-on-mobile">
         <ul class="link-list">
           <li>
             <a class="header-link current-page" href="#">Start</a>
@@ -27,6 +27,23 @@
           <li><a class="header-link" href="#">Impressum</a></li>
         </ul>
       </nav>
+
+      <button onclick="toggleMenu()" class="hide-on-desktop">Test</button>
+
+      <div id="menu-box" class="mobile-menu mobile-menu-closed">
+        <nav>
+          <ul class="mobile-link-list">
+            <li>
+              <a class="mobile-link" href="#">Start</a>
+            </li>
+            <li>
+              <a class="mobile-link" href="#">Rezept des Tages</a>
+            </li>
+            <li><a class="mobile-link" href="./kontakt.html">Kontakt</a></li>
+            <li><a class="mobile-link" href="#">Impressum</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="px-160">
       <section class="daily-recipe">
@@ -72,9 +89,9 @@
 <h2>Pfanne vs. Wok - Was ist besser?</h2>
 <div class="pfanne-wok-div">
 <p>Ob Pfanne oder Wok besser ist, hängt davon ab, was du kochen möchtest.<br>
-Die Pfanne ist ein echter Allrounder. Sie eignet sich perfekt zum Braten von Fleisch, Gemüse, Eiern oder Pancakes. 
+Die Pfanne ist ein echter Allrounder. Sie eignet sich perfekt zum Braten von Fleisch, Gemüse, Eiern oder Pancakes.
 Durch die flache Form und den meist dickeren Boden verteilt sich die Hitze gleichmäßig - ideal für scharfes Anbraten.
-Der Wok kommt ursprünglich aus der asiatischen Küche und ist optimal für schnelles Rührbraten bei hoher Hitze. 
+Der Wok kommt ursprünglich aus der asiatischen Küche und ist optimal für schnelles Rührbraten bei hoher Hitze.
 Seine gewölbte Form sorgt dafür, dass das Essen in der Mitte besonders heiß wird, während es am Rand warm bleibt - ideal für viele Zutaten gleichzeitig.</p>
 <img class="croissant-pic" src="./img/wok.jpg" alt="Wok mit Gemüse">
 </div>
@@ -84,6 +101,6 @@ Seine gewölbte Form sorgt dafür, dass das Essen in der Mitte besonders heiß w
 
 <section aria-label="footer" class="footer-container">
 
-   
+
 </body>
 </html>
