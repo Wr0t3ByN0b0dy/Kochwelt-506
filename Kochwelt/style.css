@@ -11,6 +11,9 @@ header {
   border-bottom: 1px solid rgb(245, 243, 243);
   box-shadow: 2px 2px 4px rgb(235, 233, 233);
   padding-bottom: 5px;
+  position: relative;
+  height: 128px;
+  overflow: hidden;
 }
 
 h1 {
@@ -79,67 +82,143 @@ h1 {
   cursor: pointer;
 }
 
+.kontakt-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.background-test {
+  background-color: rgb(220, 220, 220);
+  padding: 16px 16px;
+  border-radius: 10px;
+  width: 550px;
+}
+
+.kontakt-main h1 {
+  padding-bottom: 32px;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 16px;
+}
+
+.test input {
+  border-radius: 5px;
+  border: none;
+  height: 24px;
+}
+
+.test textarea {
+  border-radius: 5px;
+  border: none;
+  resize: none;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+}
+
+.kontakt-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(35, 35, 35);
+}
+
+.mobile-menu {
+  display: flex;
+  position: absolute;
+  top: 136px;
+  right: 160px;
+
+  transition: all 250ms ease-in-out;
+}
+
+.hide-on-desktop {
+  display: none;
+}
+
+.mobile-menu-closed {
+  transform: translateX(100%);
+}
+
+@media (max-width: 950px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .hide-on-desktop {
+    display: block;
+  }
+}
+
 /*Section Lust auf Neues*/
 .section-lust-auf-neues {
-background-color: rgb(240, 240, 240);
-width: 100vw;
-margin-left: -160px;
-margin-right: -160px;
+  background-color: rgb(240, 240, 240);
+  width: 100vw;
+  margin-left: -160px;
+  margin-right: -160px;
 }
 
 h2 {
-font-size: 32px;
-text-align: center;
-padding-top: 35px;
-padding-bottom: 32px;
+  font-size: 32px;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 32px;
 }
 
 .lust-auf-neues-div {
-display: flex;
-justify-content: space-between;
-padding-bottom: 85px;
-padding-left: 160px;
-padding-right: 160px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 85px;
+  padding-left: 160px;
+  padding-right: 160px;
 }
 
 .croissant-div {
-display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .croissant-pic {
-height: 250px;
-width: 250px;
-border-radius: 10px;
-object-fit: cover;
+  height: 250px;
+  width: 250px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .text-frische-croissants {
-font-weight: 600;
-padding-top: 8px;
+  font-weight: 600;
+  padding-top: 8px;
 }
 
 /*Section Pfanne vs. Wok*/
 
 .pfanne-wok-div {
-display: flex;
-padding-bottom: 30px;
-padding-top: 10px;
-gap: 45px;
+  display: flex;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  gap: 45px;
 }
 
 p {
-font-size: 20px;
+  font-size: 20px;
 }
 
 /*Section Footer*/
 
 .footer-container {
-background-color: rgb(64, 59, 59);
-height: 300px;
-margin-bottom: 10px;
+  background-color: rgb(64, 59, 59);
+  height: 300px;
+  margin-bottom: 10px;
 }
 
 
@@ -212,14 +291,14 @@ input {
   font-size: 18px;
 }
 
-.input-button{
+.input-button {
   display: flex;
   justify-content: start;
   align-items: center;
   margin-bottom: 12px;
 }
 
-.recipe-table label{
+.recipe-table label {
   display: block;
   margin-top: 4px;
 }
@@ -230,41 +309,40 @@ input {
   border-collapse: collapse;
 }
 
-.zutaten-menge{
+.zutaten-menge {
   padding: 12px;
   border-radius: 8px;
-  
 }
 
-.table-bg{
- background-color: rgba(239, 239, 239, 255)
+.table-bg {
+  background-color: rgba(239, 239, 239, 255);
 }
 
-@media (max-width: 865px){
+@media (max-width: 865px) {
   .px-160 {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-}
-
-@media (max-width: 625px){
- input{
-  width: 70px;
- }
-
- .recipe-table .button-style{
-  padding-left: 16px;
-  padding-right: 16px;
- }
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
-@media (max-width: 400px){
-  .recipe-table .button-style{
+@media (max-width: 625px) {
+  input {
+    width: 70px;
+  }
+
+  .recipe-table .button-style {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .recipe-table .button-style {
     padding-left: 20px;
     padding-right: 20px;
- }
+  }
 
- .griechischer-bauernsalat h1{
-  font-size: 23px;
- }
+  .griechischer-bauernsalat h1 {
+    font-size: 23px;
+  }
 }
