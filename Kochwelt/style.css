@@ -346,3 +346,14 @@ input {
     font-size: 23px;
   }
 }
+
+.impressum-div {
+  font-family: "Raleway", sans-serif;
+  padding-top: 60px;
+  height: 100vh;
+}
+
+.impressum-titles {
+text-align: left;
+padding-bottom: 26px;
+}
