@@ -6,52 +6,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
-    <title>Kochwelt</title>
-  </head>
-  <body>
-    <header class="px-160">
-      <a href="./index.html"
-        ><img src="./img/logo.png" alt="Kochwelt logo"
-      /></a>
-      <nav class="hide-on-mobile">
-        <ul class="link-list">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <title>Kochwelt</title>
+</head>
+
+<body>
+  <header class="px-160">
+    <a href="./index.html"><img src="./img/logo.png" alt="Kochwelt logo" /></a>
+    <nav class="hide-on-mobile">
+      <ul class="link-list">
+        <li>
+          <a class="header-link current-page" href="./index.html">Start</a>
+        </li>
+        <li>
+          <a class="header-link" href="./recipe.html">Rezept des Tages</a>
+        </li>
+        <li><a class="header-link" href="./kontakt.html">Kontakt</a></li>
+        <li><a class="header-link" href="./impressum.html">Impressum</a></li>
+      </ul>
+    </nav>
+
+    <button onclick="toggleMenu()" class="hide-on-desktop">Test</button>
+
+    <div id="menu-box" class="mobile-menu mobile-menu-closed">
+      <nav>
+        <ul class="mobile-link-list">
           <li>
-            <a class="header-link current-page" href="./index.html">Start</a>
+            <a class="mobile-link" href="./index.html">Start</a>
           </li>
           <li>
-            <a class="header-link" href="./recipe.html">Rezept des Tages</a>
+            <a class="mobile-link" href="./recipe.html">Rezept des Tages</a>
           </li>
-          <li><a class="header-link" href="./kontakt.html">Kontakt</a></li>
-          <li><a class="header-link" href="./impressum.html">Impressum</a></li>
+          <li><a class="mobile-link" href="./kontakt.html">Kontakt</a></li>
+          <li><a class="mobile-link" href="./impressum.html">Impressum</a></li>
         </ul>
       </nav>
+    </div>
+  </header>
 
-      <button onclick="toggleMenu()" class="hide-on-desktop">Test</button>
-
-      <div id="menu-box" class="mobile-menu mobile-menu-closed">
-        <nav>
-          <ul class="mobile-link-list">
-            <li>
-              <a class="mobile-link" href="index.html">Start</a>
-            </li>
-            <li>
-              <a class="mobile-link" href="./recipe.html">Rezept des Tages</a>
-            </li>
-            <li><a class="mobile-link" href="./kontakt.html">Kontakt</a></li>
-            <li><a class="mobile-link" href="./impressum.html">Impressum</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="px-160">
-      <section class="daily-recipe">
-        <img src="./img/croissant.jpg" alt="" />
+  <main class="px-160">
+    <section aria-label="französische-croissants" class="daily-recipe">
+      <img src="./img/croissant.jpg" alt="" />
 
       <div class="daily-recipe-text">
-        <h2>Französische Croissants</h2>
+        <h1 class="title-french-croissants">Französische Croissants</h1>
         <p>
           Schmackhafte Croissants können auch zu Hause sehr einfach gebacken
           werden. Mit ca. 30 Minuten Aufwand kannst du ein wundervolles
@@ -86,21 +87,24 @@
     </section>
 
 
-<section aria-label="pfanne-vs-wok" class="section-pfanne-vs-wok">
-<h2>Pfanne vs. Wok - Was ist besser?</h2>
-<div class="pfanne-wok-div">
-<p>Ob Pfanne oder Wok besser ist, hängt davon ab, was du kochen möchtest.<br>
-Die Pfanne ist ein echter Allrounder. Sie eignet sich perfekt zum Braten von Fleisch, Gemüse, Eiern oder Pancakes.
-Durch die flache Form und den meist dickeren Boden verteilt sich die Hitze gleichmäßig - ideal für scharfes Anbraten.
-Der Wok kommt ursprünglich aus der asiatischen Küche und ist optimal für schnelles Rührbraten bei hoher Hitze.
-Seine gewölbte Form sorgt dafür, dass das Essen in der Mitte besonders heiß wird, während es am Rand warm bleibt - ideal für viele Zutaten gleichzeitig.</p>
-<img class="croissant-pic" src="./img/wok.jpg" alt="Wok mit Gemüse">
-</div>
-</section>
+    <section aria-label="pfanne-vs-wok" class="section-pfanne-vs-wok">
+      <h2>Pfanne vs. Wok - Was ist besser?</h2>
+      <div class="pfanne-wok-div">
+        <p>Ob Pfanne oder Wok besser ist, hängt davon ab, was du kochen möchtest.<br>
+          Die Pfanne ist ein echter Allrounder. Sie eignet sich perfekt zum Braten von Fleisch, Gemüse, Eiern oder
+          Pancakes.
+          Durch die flache Form und den meist dickeren Boden verteilt sich die Hitze gleichmäßig - ideal für scharfes
+          Anbraten.
+          Der Wok kommt ursprünglich aus der asiatischen Küche und ist optimal für schnelles Rührbraten bei hoher Hitze.
+          Seine gewölbte Form sorgt dafür, dass das Essen in der Mitte besonders heiß wird, während es am Rand warm
+          bleibt - ideal für viele Zutaten gleichzeitig.</p>
+        <img class="croissant-pic" src="./img/wok.jpg" alt="Wok mit Gemüse">
+      </div>
+    </section>
 
-</main>
+  </main>
 
-<section aria-label="footer" class="footer-container">
+  <section aria-label="footer" class="footer-container">
 
 
 </body>

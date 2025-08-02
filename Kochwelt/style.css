@@ -64,13 +64,17 @@ h1 {
 }
 
 .daily-recipe-text p {
-  font-size: 28px;
+  font-size: 20px;
+}
+
+.title-french-croissants {
+text-align: left;
+padding-top: 0px;
 }
 
 .daily-recipe-button {
   display: flex;
-  align-items: flex-end;
-  height: 50%;
+  margin-top: 40px;
 }
 
 .button-style {
@@ -204,7 +208,7 @@ h2 {
 
 .pfanne-wok-div {
   display: flex;
-  padding-bottom: 30px;
+  padding-bottom: 80px;
   padding-top: 10px;
   gap: 45px;
 }
@@ -217,7 +221,8 @@ p {
 
 .footer-container {
   background-color: rgb(64, 59, 59);
-  height: 300px;
+  height: 250px;  
+  width: 100vw;
   margin-bottom: 10px;
 }
 
