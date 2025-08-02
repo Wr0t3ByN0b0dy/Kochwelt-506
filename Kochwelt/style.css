@@ -37,6 +37,7 @@ h1 {
   text-decoration: none;
   color: rgb(64, 59, 59);
 }
+
 .header-link:hover {
   color: rgb(0, 128, 0);
 }
@@ -47,15 +48,17 @@ h1 {
 }
 
 .daily-recipe {
+  padding-left: 160px;
+  padding-right: 160px;
   padding-top: 80px;
   padding-bottom: 40px;
   display: flex;
   gap: 32px;
 }
+
 .daily-recipe-text {
   display: flex;
   flex-direction: column;
-  height: 350px;
 }
 
 .daily-recipe img {
@@ -68,8 +71,8 @@ h1 {
 }
 
 .title-french-croissants {
-text-align: left;
-padding-top: 0px;
+  text-align: left;
+  padding-top: 0px;
 }
 
 .daily-recipe-button {
@@ -157,6 +160,7 @@ padding-top: 0px;
   .hide-on-mobile {
     display: none;
   }
+
   .hide-on-desktop {
     display: block;
   }
@@ -166,8 +170,6 @@ padding-top: 0px;
 .section-lust-auf-neues {
   background-color: rgb(240, 240, 240);
   width: 100vw;
-  margin-left: -160px;
-  margin-right: -160px;
 }
 
 h2 {
@@ -221,11 +223,12 @@ p {
 
 .footer-container {
   background-color: rgb(64, 59, 59);
-  height: 250px;  
+  height: 250px;
   width: 100vw;
   margin-bottom: 10px;
 }
 
+/*Section Recipe*/
 
 .griechischer-bauernsalat {
   display: flex;
@@ -323,6 +326,19 @@ input {
   background-color: rgba(239, 239, 239, 255);
 }
 
+/*Impressum*/
+
+.impressum-div {
+  font-family: "Raleway", sans-serif;
+  padding-top: 60px;
+  height: 100vh;
+}
+
+.impressum-titles {
+  text-align: left;
+  padding-bottom: 26px;
+}
+
 @media (max-width: 865px) {
   .px-160 {
     padding-left: 40px;
@@ -352,13 +368,127 @@ input {
   }
 }
 
-.impressum-div {
-  font-family: "Raleway", sans-serif;
-  padding-top: 60px;
-  height: 100vh;
+/*Media Query start page*/
+
+@media (max-width: 1180px) {
+  .px-160 {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .daily-recipe {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .daily-recipe img {
+    width: 424px;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .lust-auf-neues-div {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }
 
-.impressum-titles {
-text-align: left;
-padding-bottom: 26px;
+@media (max-width: 970px) {
+  .title-french-croissants {
+    padding-bottom: 10px;
+  }
+
+  .daily-recipe-text p {
+    font-size: 18px;
+  }
+
+  .button-style {
+    padding: 12px 30px;
+    font-size: 18px;
+  }
+
+  .daily-recipe-button {
+    margin-top: 15px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .croissant-pic {
+    height: 180px;
+    width: 180px;
+  }
+}
+
+@media (max-width: 900px) {
+.daily-recipe {
+align-items: center;
+}
+
+}
+
+@media (max-width: 750px) {
+
+  .daily-recipe {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lust-auf-neues-div img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (max-width: 700px) {
+  .pfanne-wok-div {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 660px) {
+  .lust-auf-neues-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .lust-auf-neues-div img {
+    height: 180px;
+    width: 180px;
+  }
+}
+
+@media (max-width: 550px) {
+.daily-recipe img {
+  width: 350px;
+  height: 200px;
+}
+}
+@media (max-width: 490px) {
+.daily-recipe img {
+  width: 280px;
+  height: 180px;
+}
+
+.px-160 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.daily-recipe {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 380px) {
+.daily-recipe img {
+  width: 200px;
+  height: 130px;
+}
+
 }
