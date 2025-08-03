@@ -172,7 +172,7 @@ h1 {
   width: 100vw;
 }
 
-h2 {
+.start-page-h2 {
   font-size: 32px;
   text-align: center;
   padding-top: 35px;
@@ -331,10 +331,9 @@ input {
 .impressum-div {
   font-family: "Raleway", sans-serif;
   padding-top: 60px;
-  height: 100vh;
-}
+  }
 
-.impressum-titles {
+.impressum-h1{
   text-align: left;
   padding-bottom: 26px;
 }
