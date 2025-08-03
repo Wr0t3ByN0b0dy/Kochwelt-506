@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Gulaschsuppe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="px-160">
+      <a href="./index.html"
+        ><img src="./img/logo.png" alt="Kochwelt logo"
+      /></a>
+      <nav>
+        <ul class="link-list">
+          <li>
+            <a class="header-link" href="./index.html">Start</a>
+          </li>
+          <li>
+            <a class="header-link current-page" href="./recipe.html">Rezept des Tages</a>
+          </li>
+          <li><a class="header-link" href="./kontakt.html">Kontakt</a></li>
+          <li><a class="header-link" href="./impressum.html">Impressum</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="px-160">
+      <section class="griechischer-bauernsalat">
+        <h1>Gulaschsuppe</h1>
+        <img
+          class="griechischer-bauernsalat-img"
+          src="./img/gulaschsuppe.jpg"
+          alt="Gulaschsuppe"
+        />
+
+        <small>
+          <span>
+            <img src="./img/icons/clock-regular.svg" alt="" />
+            <p>time</p>
+          </span>
+
+          <span>
+            <img src="./img/icons/brain-solid.svg" alt="" />
+            <p>difficulty</p>
+          </span>
+          <span>
+            <img src="./img/icons/calendar-alt-regular.svg" alt="" />
+            <p>date</p>
+          </span>
+        </small>
+      </section>
+
+      <section class="recipe-table">
+        <form
+          class="input-button"
+          id="portionForm"
+          onsubmit="updateIngredients(event)"
+        >
+          <label for="amountInput">Zutaten für</label>
+          <input id="amountInput" type="number" min="1" value="1" required />
+          <button class="button-style" type="submit">Portionen</button>
+        </form>
+
+        <table id="number-of-ingredient">
+          <tbody id="zutaten-body">
+            <tr>
+              <td
+                class="zutaten-menge"
+                data-base="125"
+                data-zutat="g Rindergulasch"
+              >
+                125 g Rindergulsch
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="zutaten-menge"
+                data-base="75"
+                data-zutat="Zwiebeln"
+              >
+                75 g Zwiebeln
+              </td>
+            </tr>
+            <tr>
+              <td class="zutaten-menge" data-base="300" data-zutat="ml Rinder-Fond">
+                300 ml Rinderfond
+              </td>
+            </tr>
+            <tr>
+              <td class="zutaten-menge" data-base="38" data-zutat="g Karrotten">
+                38 g Karotten
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="zutaten-menge"
+                data-base="0.5"
+                data-zutat="Stück Paprikaschote"
+              >
+                0.5 Stück Paprikaschote(n)
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="zutaten-menge"
+                data-base="0.25"
+                data-zutat="Stück Knoblauchzehe"
+              >
+                0.25 Stück Knoblauchzehe
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="zutaten-menge"
+                data-base="12.5"
+                data-zutat="g Butterschmalz"
+              >
+                12.5 g Butterschmalz
+              </td>
+            </tr>
+            <tr>
+              <td class="zutaten-menge" data-base="2" data-zutat="Teelöffel Tomatenmark">
+                1 Teelöffel Tomatenmark
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="zutaten-menge"
+                data-base="1"
+                data-zutat="Teelöffel Paprikapulver edelsüß"
+              >
+                1 Teelöffel Paprikapulver edelsüß
+              </td>
+            </tr>
+            <tr>
+              <td class="zutaten-menge" data-base="1" data-zutat="Oregano">
+                1 Oregano
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="prepare">
+        <h2>Zubereitung</h2>
+        <small>
+          <span>
+            <img src="./img/icons/clock-regular.svg" alt="" />
+            <p>time</p>
+          </span>
+          <span>
+            <img src="./img/icons/clock-regular.svg" alt="" />
+            <p>time</p>
+          </span>
+        </small>
+
+        <p>text</p>
+      </section>
+
+      <section class="recipe-creator">
+        <h3>Rezept erstellt von</h3>
+
+        <div class="profile">
+          <img class="profile-icon" src="./img/profile-susanne.jpg" alt="Profilbild von Susanne" />
+          <p>Susanne Di Sorbo</p>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="zutaten_tabelle.js"></script>
+</html>

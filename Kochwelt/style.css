@@ -166,7 +166,7 @@ h1 {
   }
 }
 
-/*Section Lust auf Neues*/
+/*Section Lust auf was Neues*/
 .section-lust-auf-neues {
   background-color: rgb(240, 240, 240);
   width: 100vw;
@@ -216,7 +216,7 @@ h1 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 /*Section Footer*/
@@ -278,7 +278,7 @@ small {
 .profile-icon {
   height: 64px;
   border-radius: 50%;
-}
+  }
 
 .profile {
   display: flex;
