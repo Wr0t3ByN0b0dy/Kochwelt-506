@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./img/logo_small.png" />
+
+    <title>Rezept</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="px-160">
+      <a href="./index.html"
+        ><img src="./img/logo.png" alt="Kochwelt logo"
+      /></a>
+      <nav>
+        <ul class="link-list">
+          <li>
+            <a class="header-link" href="./index.html">Start</a>
+          </li>
+          <li>
+            <a class="header-link" href="./recipe.html">Rezept des Tages</a>
+          </li>
+          <li><a class="header-link" href="./kontakt.html">Kontakt</a></li>
+          <li><a class="header-link" href="./impressum.html">Impressum</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="px-160">
+      <section class="griechischer-bauernsalat">
+        <h1>Spaghetti Carbonara</h1>
+        <img
+          class="griechischer-bauernsalat-img"
+          src="./img/spaghetti-carbonara.jpg"
+          alt="Spaghetti-Carbonara"
+        />
+
+        <small>
+          <span>
+            <img src="./img/icons/clock-regular.svg" alt="" />
+            <p>time</p>
+          </span>
+
+          <span>
+            <img src="./img/icons/brain-solid.svg" alt="" />
+            <p>difficulty</p>
+          </span>
+          <span>
+            <img src="./img/icons/calendar-alt-regular.svg" alt="" />
+            <p>date</p>
+          </span>
+        </small>
+      </section>
+
+      <section class="recipe-table">
+        <form
+          class="input-button"
+          id="portionForm"
+          onsubmit="updateIngredients(event)"
+        >
+          <label for="amountInput">Zutaten für</label>
+          <input id="amountInput" type="number" min="1" value="1" required />
+          <button class="button-style" type="submit">Portionen</button>
+        </form>
+
+        <table id="number-of-ingredient">
+          <tbody id="zutaten-body">
+            <tr>
+              <td
+                class="zutaten-menge"
+                data-base="100"
+                data-zutat="g Spaghetti oder Tortellini"
+              >
+                100 g Spaghetti oder Tortellini
+              </td>
+            </tr>
+            <tr>
+              <td class="zutaten-menge" data-base="50" data-zutat="g Schinken">
+                50 g Schinken
+              </td>
+            </tr>
+            <tr>
+              <td class="zutaten-menge" data-base="1" data-zutat="Eigelb">
+                1 Eigelb
+              </td>
+            </tr>
+            <tr>
+              <td class="zutaten-menge" data-base="12.5" data-zutat="g Butter">
+                12.5 g Butter
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="zutaten-menge"
+                data-base="1"
+                data-zutat="Prise Salz und Pfeffer"
+              >
+                1 Prise Salz und Pfeffer
+              </td>
+            </tr>
+            <tr>
+              <td
+                class="zutaten-menge"
+                data-base="0.25"
+                data-zutat="Prise Muskat"
+              >
+                0.25 Prise Muskat
+              </td>
+            </tr>
+            <tr>
+              <td class="zutaten-menge" data-base="1" data-zutat="Parmesan">
+                1 Parmesan
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="prepare">
+        <h2>Zubereitung</h2>
+        <small>
+          <span>
+            <img src="./img/icons/clock-regular.svg" alt="" />
+            <p>time</p>
+          </span>
+          <span>
+            <img src="./img/icons/clock-regular.svg" alt="" />
+            <p>time</p>
+          </span>
+        </small>
+
+        <p>
+          Die Pasta in reichlich Salzwasser bissfest kochen. Den Schinken in
+          Würfel schneiden und in wenig Butter anbraten. Eigelb in einer großen
+          Schüssel mit Salz, Pfeffer und Muskat verquirlen. Die Butter schaumig
+          rühren und gut unter das Eigelb mischen. Die Schinkenwürfel und den
+          geriebenen Käse gründlich unterrühren. Wenn die Nudeln gar sind,
+          abgießen, sofort zu der Mischung in die Schüssel geben, nochmal alles
+          gründlich durchmischen, dann sogleich servieren.<br /><br />
+          Tipp: Wenn es zu krümelig, oder nicht cremig genug ist, kann die
+          Eimasse-, Speck, Butter und Käsemasse noch mit etwas Nudelwasser (ca.
+          halbes Schnappsglas oder 50 ml) die Cremigkeit erhöhen.
+        </p>
+      </section>
+
+      <section class="recipe-creator">
+        <h3>Rezept erstellt von</h3>
+
+        <div class="profile">
+          <img class="profile-icon" src="./img/profile.png" alt="" />
+          <p>Lukas Jung</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="px-160">
+      <img src="./img/logo.png" alt="logo" />
+
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank"
+          ><img src="./img/facebook-logo.png" alt=""
+        /></a>
+        <a href="https://instagram.com" target="_blank"
+          ><img src="./img/instagram-logo.png" alt=""
+        /></a>
+        <a href="https://x.com" target="_blank"
+          ><img src="./img/x-logo.png" alt=""
+        /></a>
+      </div>
+    </footer>
+  </body>
+  <script src="zutaten_tabelle.js"></script>
+</html>
