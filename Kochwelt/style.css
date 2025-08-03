@@ -132,38 +132,16 @@ h1 {
   padding-top: 16px;
 }
 
-.kontakt-footer {
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(35, 35, 35);
+  margin-top: 16px;
 }
 
-.mobile-menu {
-  display: flex;
-  position: absolute;
-  top: 136px;
-  right: 160px;
-
-  transition: all 250ms ease-in-out;
-}
-
-.hide-on-desktop {
-  display: none;
-}
-
-.mobile-menu-closed {
-  transform: translateX(100%);
-}
-
-@media (max-width: 950px) {
-  .hide-on-mobile {
-    display: none;
-  }
-
-  .hide-on-desktop {
-    display: block;
-  }
+.social-links img {
+  height: 64px;
 }
 
 /*Section Lust auf was Neues*/
@@ -278,7 +256,7 @@ small {
 .profile-icon {
   height: 64px;
   border-radius: 50%;
-  }
+}
 
 .profile {
   display: flex;
@@ -331,9 +309,9 @@ input {
 .impressum-div {
   font-family: "Raleway", sans-serif;
   padding-top: 60px;
-  }
+}
 
-.impressum-h1{
+.impressum-h1 {
   text-align: left;
   padding-bottom: 26px;
 }
@@ -421,14 +399,12 @@ input {
 }
 
 @media (max-width: 900px) {
-.daily-recipe {
-align-items: center;
-}
-
+  .daily-recipe {
+    align-items: center;
+  }
 }
 
 @media (max-width: 750px) {
-
   .daily-recipe {
     flex-direction: column;
     align-items: flex-start;
@@ -462,32 +438,31 @@ align-items: center;
 }
 
 @media (max-width: 550px) {
-.daily-recipe img {
-  width: 350px;
-  height: 200px;
-}
+  .daily-recipe img {
+    width: 350px;
+    height: 200px;
+  }
 }
 @media (max-width: 490px) {
-.daily-recipe img {
-  width: 280px;
-  height: 180px;
-}
+  .daily-recipe img {
+    width: 280px;
+    height: 180px;
+  }
 
-.px-160 {
+  .px-160 {
     padding-left: 50px;
     padding-right: 50px;
-}
+  }
 
-.daily-recipe {
+  .daily-recipe {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 
 @media (max-width: 380px) {
-.daily-recipe img {
-  width: 200px;
-  height: 130px;
-}
-
+  .daily-recipe img {
+    width: 200px;
+    height: 130px;
+  }
 }
