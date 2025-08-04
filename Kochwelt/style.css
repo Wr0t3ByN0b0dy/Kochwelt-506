@@ -338,6 +338,10 @@ input {
   width: 600px;
 }
 
+.datenschutz-link a{
+  word-break: break-word;
+}
+
 @media (max-width: 865px) {
 
   
@@ -368,6 +372,9 @@ input {
   .griechischer-bauernsalat h1 {
     font-size: 23px;
   }
+
+
+    
 }
 
 /*Media Query start page*/
@@ -486,6 +493,11 @@ input {
     flex-direction: column;
     width: 250px;
   }
+
+  .px-160 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 @media (max-width: 490px) {
@@ -494,14 +506,16 @@ input {
     height: 180px;
   }
 
-  .px-160 {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
   .daily-recipe {
     padding-left: 50px;
     padding-right: 50px;
+  }
+  
+}
+@media (max-width: 460px){
+  small {
+    display: grid;
+    grid-template-columns: 0fr 0fr;
   }
 }
 
