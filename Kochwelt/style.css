@@ -314,30 +314,30 @@ input {
 /*Gulaschsuppe*/
 
 .table-zubereitung {
-vertical-align: top;
+  vertical-align: top;
 }
 
 .gulasch-div {
-display: flex;
-gap: 22px;
-padding-bottom: 22px;
+  display: flex;
+  gap: 22px;
+  padding-bottom: 22px;
 }
 
 .tipp-box {
-background-color: rgba(239, 239, 239, 255);
-border-radius: 8px;
-padding: 8px;
-font-style: italic;
-font-size: 16px;
-line-height: 1.5;
+  background-color: rgba(239, 239, 239, 255);
+  border-radius: 8px;
+  padding: 8px;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .tipp-1 {
-width: 600px;
+  width: 600px;
 }
 
 .gulasch-pic {
-padding-bottom: 22px;
+  padding-bottom: 22px;
 }
 
 @media (max-width: 865px) {
@@ -428,6 +428,13 @@ padding-bottom: 22px;
   }
 }
 
+@media (max-width: 780px) {
+  .gulasch-div {
+    flex-direction: column;
+    width: 350px;
+  }
+}
+
 @media (max-width: 750px) {
   .daily-recipe {
     flex-direction: column;
@@ -466,7 +473,13 @@ padding-bottom: 22px;
     width: 350px;
     height: 200px;
   }
+
+  .gulasch-div {
+    flex-direction: column;
+    width: 250px;
+  }
 }
+
 @media (max-width: 490px) {
   .daily-recipe img {
     width: 280px;
@@ -489,4 +502,23 @@ padding-bottom: 22px;
     width: 200px;
     height: 130px;
   }
+
+  .gulasch-div {
+    flex-direction: column;
+    width: 250px;
+  }
+
+  .px-160 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .gulasch-div {
+    flex-direction: column;
+    width: 190px;
+}
+
+.start-page-h2 {
+padding-left: 30px;
+padding-right: 30px;
 }
