@@ -1,201 +1,296 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="./img/logo_small.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Gulaschsuppe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="./img/logo_small.png" />
 
-    
-  </head>
-  <body>
-    <header class="px-160">
-      <a href="./index.html"
-        ><img src="./img/logo.png" alt="Kochwelt logo"
-      /></a>
-      <nav>
-        <ul class="link-list">
-          <li>
-            <a class="header-link" href="./index.html">Start</a>
-          </li>
-          <li>
-            <a class="header-link" href="./recipe.html">Rezept des Tages</a>
-          </li>
-          <li><a class="header-link" href="./kontakt.html">Kontakt</a></li>
-          <li><a class="header-link" href="./impressum.html">Impressum</a></li>
-        </ul>
-      </nav>
-    </header>
+  <title>Gulaschsuppe</title>
 
-    <main class="px-160">
-      <section class="griechischer-bauernsalat">
-        <h1>Gulaschsuppe</h1>
-        <img
-          class="griechischer-bauernsalat-img"
-          src="./img/gulaschsuppe.jpg"
-          alt="Gulaschsuppe"
-        />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
 
-        <small>
-          <span>
-            <img src="./img/icons/clock-regular.svg" alt="" />
-            <p>time</p>
-          </span>
+<body>
+  <header class="px-160">
+    <a href="./index.html"><img src="./img/logo.png" alt="Kochwelt logo" /></a>
+    <nav>
+      <ul class="link-list">
+        <li>
+          <a class="header-link" href="./index.html">Start</a>
+        </li>
+        <li>
+          <a class="header-link current-page" href="./recipe.html">Rezept des Tages</a>
+        </li>
+        <li><a class="header-link" href="./kontakt.html">Kontakt</a></li>
+        <li><a class="header-link" href="./impressum.html">Impressum</a></li>
+      </ul>
+    </nav>
+  </header>
 
-          <span>
-            <img src="./img/icons/brain-solid.svg" alt="" />
-            <p>difficulty</p>
-          </span>
-          <span>
-            <img src="./img/icons/calendar-alt-regular.svg" alt="" />
-            <p>date</p>
-          </span>
-        </small>
-      </section>
+  <main class="px-160">
+    <section class="griechischer-bauernsalat">
+      <h1>Gulaschsuppe</h1>
+      <img class="griechischer-bauernsalat-img" src="./img/gulaschsuppe.jpg" alt="Gulaschsuppe" />
 
-      <section class="recipe-table">
-        <form
-          class="input-button"
-          id="portionForm"
-          onsubmit="updateIngredients(event)"
-        >
-          <label for="amountInput">Zutaten für</label>
-          <input id="amountInput" type="number" min="1" value="1" required />
-          <button class="button-style" type="submit">Portionen</button>
-        </form>
+      <small>
+        <span>
+          <img src="./img/icons/clock-regular.svg" alt="" />
+          <p>time</p>
+        </span>
 
-        <table id="number-of-ingredient">
-          <tbody id="zutaten-body">
-            <tr>
-              <td
-                class="zutaten-menge"
-                data-base="125"
-                data-zutat="g Rindergulasch"
-              >
-                125 g Rindergulsch
-              </td>
-            </tr>
-            <tr>
-              <td class="zutaten-menge" data-base="75" data-zutat="Zwiebeln">
-                75 g Zwiebeln
-              </td>
-            </tr>
-            <tr>
-              <td
-                class="zutaten-menge"
-                data-base="300"
-                data-zutat="ml Rinder-Fond"
-              >
-                300 ml Rinderfond
-              </td>
-            </tr>
-            <tr>
-              <td class="zutaten-menge" data-base="38" data-zutat="g Karrotten">
-                38 g Karotten
-              </td>
-            </tr>
-            <tr>
-              <td
-                class="zutaten-menge"
-                data-base="0.5"
-                data-zutat="Stück Paprikaschote"
-              >
-                0.5 Stück Paprikaschote(n)
-              </td>
-            </tr>
-            <tr>
-              <td
-                class="zutaten-menge"
-                data-base="0.25"
-                data-zutat="Stück Knoblauchzehe"
-              >
-                0.25 Stück Knoblauchzehe
-              </td>
-            </tr>
-            <tr>
-              <td
-                class="zutaten-menge"
-                data-base="12.5"
-                data-zutat="g Butterschmalz"
-              >
-                12.5 g Butterschmalz
-              </td>
-            </tr>
-            <tr>
-              <td
-                class="zutaten-menge"
-                data-base="2"
-                data-zutat="Teelöffel Tomatenmark"
-              >
-                1 Teelöffel Tomatenmark
-              </td>
-            </tr>
-            <tr>
-              <td
-                class="zutaten-menge"
-                data-base="1"
-                data-zutat="Teelöffel Paprikapulver edelsüß"
-              >
-                1 Teelöffel Paprikapulver edelsüß
-              </td>
-            </tr>
-            <tr>
-              <td class="zutaten-menge" data-base="1" data-zutat="Oregano">
-                1 Oregano
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+        <span>
+          <img src="./img/icons/brain-solid.svg" alt="" />
+          <p>difficulty</p>
+        </span>
+        <span>
+          <img src="./img/icons/calendar-alt-regular.svg" alt="" />
+          <p>date</p>
+        </span>
+      </small>
+    </section>
 
-      <section class="prepare">
-        <h2>Zubereitung</h2>
-        <small>
-          <span>
-            <img src="./img/icons/clock-regular.svg" alt="" />
-            <p>time</p>
-          </span>
-          <span>
-            <img src="./img/icons/clock-regular.svg" alt="" />
-            <p>time</p>
-          </span>
-        </small>
+    <section class="recipe-table">
+      <form class="input-button" id="portionForm" onsubmit="updateIngredients(event)">
+        <label for="amountInput">Zutaten für</label>
+        <input id="amountInput" type="number" min="1" value="1" required />
+        <button class="button-style" type="submit">Portionen</button>
+      </form>
 
-        <p>text</p>
-      </section>
+      <table id="number-of-ingredient">
+        <tbody id="zutaten-body">
+          <tr>
+            <td class="zutaten-menge" data-base="125" data-zutat="g Rindergulasch">
+              125 g Rindergulsch
+            </td>
+          </tr>
+          <tr>
+            <td class="zutaten-menge" data-base="75" data-zutat="Zwiebeln">
+              75 g Zwiebeln
+            </td>
+          </tr>
+          <tr>
+            <td class="zutaten-menge" data-base="300" data-zutat="ml Rinder-Fond">
+              300 ml Rinderfond
+            </td>
+          </tr>
+          <tr>
+            <td class="zutaten-menge" data-base="38" data-zutat="g Karrotten">
+              38 g Karotten
+            </td>
+          </tr>
+          <tr>
+            <td class="zutaten-menge" data-base="0.5" data-zutat="Stück Paprikaschote">
+              0.5 Stück Paprikaschote(n)
+            </td>
+          </tr>
+          <tr>
+            <td class="zutaten-menge" data-base="0.25" data-zutat="Stück Knoblauchzehe">
+              0.25 Stück Knoblauchzehe
+            </td>
+          </tr>
+          <tr>
+            <td class="zutaten-menge" data-base="12.5" data-zutat="g Butterschmalz">
+              12.5 g Butterschmalz
+            </td>
+          </tr>
+          <tr>
+            <td class="zutaten-menge" data-base="2" data-zutat="Teelöffel Tomatenmark">
+              1 Teelöffel Tomatenmark
+            </td>
+          </tr>
+          <tr>
+            <td class="zutaten-menge" data-base="1" data-zutat="Teelöffel Paprikapulver edelsüß">
+              1 Teelöffel Paprikapulver edelsüß
+            </td>
+          </tr>
+          <tr>
+            <td class="zutaten-menge" data-base="1" data-zutat="Petersilie frisch und glatt">
+              Petersilie frisch und glatt
+            </td>
+          </tr>
+          <tr>
+            <td class="zutaten-menge" data-base="1" data-zutat="Spritzer Zitrone">
+              Spritzer Zitrone
+            </td>
+          </tr>
+          <tr>
+            <td class="zutaten-menge" data-base="1" data-zutat="Majoran, Kümmel ganz, Loorbeerblätter, Salz und Pfeffer nach Bedarf">
+              Majoran, Kümmel ganz, Loorbeerblätter, Salz und Pfeffer nach Bedarf
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-      <section class="recipe-creator">
-        <h3>Rezept erstellt von</h3>
+    <section class="prepare">
+      <h2>Zubereitung</h2>
+      <small>
+        <span>
+          <img src="./img/icons/clock-regular.svg" alt="" />
+          <p>time</p>
+        </span>
+        <span>
+          <img src="./img/icons/clock-regular.svg" alt="" />
+          <p>time</p>
+        </span>
+      </small>
 
-        <div class="profile">
-          <img
-            class="profile-icon"
-            src="./img/profile-susanne.jpg"
-            alt="Profilbild von Susanne"
-          />
-          <p>Susanne Di Sorbo</p>
-        </div>
-      </section>
-    </main>
+      <table>
+        <tr>
+          <td class="table-zubereitung">
+            1.
+          </td>
+          <td>
+            <p>Als erstes die Zwiebeln schälen halbieren und in feine Würfel schneiden.
+              Die Knoblauchzehe fein schneiden und die Paprikaschoten waschen, entkernen und in beliebig große Würfel
+              schneiden.</p><br>
+          </td>
+        </tr>
 
-    <footer class="px-160">
-      <img src="./img/logo.png" alt="logo" />
+        <tr>
+          <td class="table-zubereitung">
+            2.
+          </td>
+          <td>
+            <p>Im Anschluss das Rindfleisch in 1,5 cm große Würfel schneiden.</p><br>
 
-      <div class="social-links">
-        <a href="https://facebook.com" target="_blank"
-          ><img src="./img/facebook-logo.png" alt=""
-        /></a>
-        <a href="https://instagram.com" target="_blank"
-          ><img src="./img/instagram-logo.png" alt=""
-        /></a>
-        <a href="https://x.com" target="_blank"
-          ><img src="./img/x-logo.png" alt=""
-        /></a>
+            <div class="gulasch-div tipp-1">
+              <p class="tipp-box"><strong>Tipp:</strong><br><br>Die Gulaschsuppe steht und fällt mit der Fleischqualität! Am besten Du besorgst Dir das Fleisch
+                bei einem Metzger Deines Vertrauens. Meine Empfehlung ist ausreichend lange gereiftes Fleisch zu
+                verwenden, sonst wird es nicht zart.<br>Rindfleisch sollte mindestens 14 Tage noch besser 21 Tage
+                gereift
+                sein. Für die Gulaschsuppe bevorzuge ich Fleisch von der Wade oder vom Schulterblatt, beides ist leicht
+                durchwachsen aber zart und muss nicht zu lange schmoren.</p><br>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table-zubereitung">
+            3.
+          </td>
+          <td>
+            <p>Dann erhitzt du in einem großen Topf das Butterschmalz und brätst bei sehr hoher Temperatur das Fleisch
+              in zwei Portionen an, so dass es schön Farbe annimmt. Die Fleischwürfel bitte zu Beginn in Ruhe lassen und
+              nicht wenden, erst nach ca. 1 Minute. Zur Seite stellen.</p><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+
+          <td>
+            <div class="gulasch-div">
+              <img class="croissant-pic" src="./img/rindfleischwuerfel.jpg" alt="Rindfleischwürfel roh">
+              <p class="tipp-box"><strong>Tipp:</strong><br><br>Das Fleisch solltest Du auf jeden Fall portionsweise
+                anbraten.<br>Denn wenn Du das gesamte Gulaschfleisch auf einmal in den Topf gibst, bildet sich Flüssigkeit.<br>
+                Dann kocht das Fleisch statt zu braten und wird zäh.<br>
+                Noch ein Hinweis: Je höher der Topfrand umso weniger Fettspritzer auf der Kochplatte.</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table-zubereitung">
+            4.
+          </td>
+          <td>
+            <p>Jetzt gibst du die gewürfelten Zwiebeln, Paprika, Knoblauch, Tomatenmark ohne weitere Fett-Zugabe in den
+              Topf und röstest alles 3 Minuten bei mittlerer bis hoher Temperatur unter gelegentlichem Rühren an.</p>
+            <br>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table-zubereitung">
+            5.
+          </td>
+          <td>
+            <p>Im Anschluss rührst Du erst das Paprikapulver kurz unter, löscht mit Rinderfond ab und löst mit einem
+              Kochlöffel evtl. vorhandenen Bratensatz.</p><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table-zubereitung">
+            6.
+          </td>
+          <td>
+            <p>Danach gibst Du das bereits angebratene Rindergulasch, samt ausgetretenem Fleischsaft, hinein
+              Lorbeerblätter und gemahlenen schwarzen Pfeffer. Die Suppe kurz aufkochen lassen.</p><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table-zubereitung">
+            7.
+          </td>
+          <td>
+            <p>Im Anschluss bei geringer Hitze mit Deckel für 35 Minuten (nach Belieben auch länger) auf der Herdplatte
+              köcheln lassen.</p><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table-zubereitung">
+            8.
+          </td>
+          <td>
+            <p>In der Zwischenzeit schälst Du die Kartoffeln und schneidest sie in ca. 1,5 cm Würfel. Die Karrotten
+              schälen und in feine Scheiben schneiden. Bei dicken Karrotten halbierst Du diese und schneidest sie dann.
+            </p><br>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table-zubereitung">
+            9.
+          </td>
+          <td>
+            <p>Nach Ablauf der 35 Minuten gibst du die Kartoffeln, Karrotten, Majoran und Kümmel zur Gulaschsuppe und
+              lässt sie weitere 25 Minuten ohne Deckel köcheln. Mit Salz, Pfeffer, 1 Spritzer Zitronensaft und nach
+              Belieben Cayennepfeffer abschmecken.</p><br>
+              <img class="croissant-pic gulasch-pic" src="./img/gulaschsuppe.jpg" alt="Gulaschsuppe">
+          </td>          
+        </tr>
+
+        <tr>
+          <td class="table-zubereitung">
+            10.
+          </td>
+          <td>
+            <p>Zum Schluß Omas Gulaschsuppe ungarischer Art noch einmal nach Belieben abschmecken und mit frischer
+              Petersilie servieren. Ich wünsche Dir einen guten Appetit.</p><br>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="recipe-creator">
+      <h3>Rezept erstellt von</h3>
+
+      <div class="profile">
+        <img class="profile-icon" src="./img/profile-susanne.jpg" alt="Profilbild von Susanne" />
+        <p>Susanne Di Sorbo</p>
       </div>
-    </footer>
-  </body>
-  <script src="zutaten_tabelle.js"></script>
+    </section>
+  </main>
+
+  <footer class="px-160">
+    <img src="./img/logo.png" alt="logo" />
+
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank"><img src="./img/facebook-logo.png" alt="" /></a>
+      <a href="https://instagram.com" target="_blank"><img src="./img/instagram-logo.png" alt="" /></a>
+      <a href="https://x.com" target="_blank"><img src="./img/x-logo.png" alt="" /></a>
+    </div>
+  </footer>
+</body>
+<script src="zutaten_tabelle.js"></script>
+
 </html>

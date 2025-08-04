@@ -69,10 +69,6 @@ h1 {
   border-radius: 10px;
 }
 
-.daily-recipe-text p {
-  font-size: 20px;
-}
-
 .title-french-croissants {
   text-align: left;
   padding-top: 0px;
@@ -80,7 +76,7 @@ h1 {
 
 .daily-recipe-button {
   display: flex;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .button-style {
@@ -156,7 +152,6 @@ footer img{
 /*Section Lust auf was Neues*/
 .section-lust-auf-neues {
   background-color: rgb(240, 240, 240);
-  width: 100vw;
 }
 
 .start-page-h2 {
@@ -182,8 +177,8 @@ footer img{
 }
 
 .croissant-pic {
-  height: 250px;
-  width: 250px;
+  height: 240px;
+  width: 240px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -318,6 +313,35 @@ input {
   padding-bottom: 26px;
 }
 
+/*Gulaschsuppe*/
+
+.table-zubereitung {
+  vertical-align: top;
+}
+
+.gulasch-div {
+  display: flex;
+  gap: 22px;
+  padding-bottom: 22px;
+}
+
+.tipp-box {
+  background-color: rgba(239, 239, 239, 255);
+  border-radius: 8px;
+  padding: 8px;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.tipp-1 {
+  width: 600px;
+}
+
+.gulasch-pic {
+  padding-bottom: 22px;
+}
+
 @media (max-width: 865px) {
 
   
@@ -409,6 +433,13 @@ input {
   }
 }
 
+@media (max-width: 780px) {
+  .gulasch-div {
+    flex-direction: column;
+    width: 350px;
+  }
+}
+
 @media (max-width: 750px) {
   .daily-recipe {
     flex-direction: column;
@@ -454,7 +485,13 @@ input {
     width: 350px;
     height: 200px;
   }
+
+  .gulasch-div {
+    flex-direction: column;
+    width: 250px;
+  }
 }
+
 @media (max-width: 490px) {
   .daily-recipe img {
     width: 280px;
@@ -484,5 +521,24 @@ input {
 
   .social-links img{
     height: 46px;
+  }
+  .gulasch-div {
+    flex-direction: column;
+    width: 250px;
+  }
+
+  .px-160 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .gulasch-div {
+    flex-direction: column;
+    width: 190px;
+}
+
+  .start-page-h2 {
+  padding-left: 30px;
+  padding-right: 30px;
   }
 }
