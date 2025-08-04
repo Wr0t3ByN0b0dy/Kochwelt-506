@@ -336,10 +336,6 @@ input {
   width: 600px;
 }
 
-.gulasch-pic {
-  padding-bottom: 22px;
-}
-
 @media (max-width: 865px) {
   .px-160 {
     padding-left: 40px;
