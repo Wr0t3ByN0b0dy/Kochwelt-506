@@ -19,7 +19,7 @@
         let zutat = feld.getAttribute('data-zutat');
         let neueMenge = basis * portionen;
 
-        feld.textContent = `${neueMenge} ${zutat}`;
+        feld.textContent = `${neueMenge} ${zutat}`; 
       });
     }
 

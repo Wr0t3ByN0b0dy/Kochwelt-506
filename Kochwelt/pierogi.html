@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./img/logo_small.png" />
+
+    <title>Rezept</title>
+  </head>
+  <body>
+    <header class="px-160">
+      <a href="./index.html"
+        ><img src="./img/logo.png" alt="Kochwelt logo"
+      /></a>
+      <nav>
+        <ul class="link-list">
+          <li>
+            <a class="header-link" href="./index.html">Start</a>
+          </li>
+          <li>
+            <a class="header-link" href="./recipe.html">Rezept des Tages</a>
+          </li>
+          <li><a class="header-link" href="./kontakt.html">Kontakt</a></li>
+          <li><a class="header-link" href="./impressum.html">Impressum</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="px-160">
+      <section class="griechischer-bauernsalat">
+        <h1>Polnische Pierogi</h1>
+        <img class="griechischer-bauernsalat-img" src="./img/Pierogi.jpg" alt="Pierogi"/>
+
+        <small>
+          <span>
+            <img src="./img/icons/clock-regular.svg" alt="" />
+            <p>55 Min.</p>
+          </span>
+
+          <span>
+            <img src="./img/icons/brain-solid.svg" alt="" />
+            <p>simpel</p>
+          </span>
+          <span>
+            <img src="./img/icons/calendar-alt-regular.svg" alt="" />
+            <p>04.08.2025</p>
+          </span>
+        </small>
+      </section>
+
+      <section class="recipe-table">
+        <form class="input-button" id="portionForm" onsubmit="updateIngredients(event)">
+          <label for="amountInput">Zutaten für</label>
+          <input id="amountInput" type="number" min="1" value="4" required />
+          <button class="button-style" type="submit">Portionen</button>
+        </form>
+
+        <table id="number-of-ingredient">
+          <tbody id="zutaten-body">
+            <tr>
+              <td class="zutaten-menge" data-base="250" data-zutat="g Weizenmehl"> 250 g Weizenmehl</td>
+            </tr>
+            <tr>
+              <td class="zutaten-menge" data-base="1" data-zutat="Ei"> 1 Ei </td>
+            </tr>
+            <tr>
+                <td class="zutaten-menge" data-base="0.5" data-zutat="Prisen Salz"> 0,5 Prisen Salz </td>
+            </tr>
+            <tr>
+              <td class="zutaten-menge" data-base="200" data-zutat="g Kartoffeln, mehlig kochend"> 200 g Kartoffeln, mehlig kochend</td>
+            </tr>
+            <tr>
+              <td class="zutaten-menge" data-base="0" data-zutat="Salz"> Salz</td>
+            </tr>
+            <tr>
+              <td class="zutaten-menge" data-base="150" data-zutat="g Schichtkäse"> 150 g Schichtkäse </td>
+            </tr>
+            <tr>
+              <td class="zutaten-menge" data-base="1" data-zutat="Zwiebel"> 1 Zwiebel</td>
+            </tr>
+            <tr>
+              <td class="zutaten-menge" data-base="50" data-zutat="g Butter"> 50 g Butter</td>
+            </tr>
+            <tr>
+              <td class="zutaten-menge" data-base="" data-zutat="Pfeffer"> Pfeffer</td>
+            </tr>
+            <tr>
+              <td class="zutaten-menge" data-base="4" data-zutat="Zweige Petersilie"> 4 Zweige Petersilie </td>
+            </tr>
+            <tr>
+              <td class="zutaten-menge" data-base="50" data-zutat="g Schmand"> 50 g Schmand </td>
+            </tr>
+            <tr>
+              <td class="zutaten-menge" data-base="" data-zutat="Mehl, für die Arbeitsfläche"> Mehl, für die Arbeitsfläche </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="prepare">
+        <h2>Zubereitung</h2>
+        <small>
+          <span>
+            <img src="./img/icons/clock-regular.svg" alt="" />
+            <p>ca. 55 Minuten</p>
+          </span>
+          <span>
+            <img src="./img/icons/clock-regular.svg" alt="" />
+            <p>Gesamtzeit ca. 55 Minuten</p>
+          </span>
+        </small>
+
+        <p>
+            Für den Nudelteig Mehl in eine Schüssel sieben, in der Mitte eine Mulde formen und das Ei, 100 ml (für 4 Portionen) kaltes Wasser sowie Salz hineingeben. Vom Rand aus etwas Mehl ins Wasser rühren, dann nach und nach weiteres Mehl einarbeiten, bis ein homogener Teig entstanden ist. Teig nochmals 2 Minuten durchkneten und anschließend abgedeckt 30 Minuten im Kühlschrank ruhen lassen.
+            Inzwischen für die Füllung Kartoffeln schälen, waschen, kleinschneiden und ca. 5-6 Minuten in Salzwasser weichkochen. Anschließend Kartoffeln abgießen und ausdampfen, dann mit Schichtkäse stampfen. Zwiebel abziehen und fein würfeln, dann in einer Pfanne in Butter anschwitzen und etwa 10 Minuten bei kleiner Hitze hellbraun dünsten. Die Hälfte der Zwiebeln unter die Füllung heben und den Rest in der Pfanne bereithalten. Kartoffelmasse mit Salz sowie Pfeffer abschmecken.
+            Für die Piroggen Teig mit einer Teigrolle auf einer bemehlten Arbeitsfläche 2 mm dünn ausrollen. Mit einem runden Ausstecher oder einem Glas (10 cm ø) 24 Kreise ausstechen. Auf jeden Teigkreis einen Teelöffel Füllung geben: Teig über die Füllung zu Halbmonden verschließen.
+            Teigtaschen in ausreichend kochendem Salzwasser bei kleiner Hitze 6 Minuten garziehen bis sie an der Oberfläche schwimmen. Anschließend herausnehmen, abtropfen und in der restlichen Butter-Zwiebel Mischung anschwitzen
+            Für die Garnitur Petersilie waschen, nach Wunsch von den Stielen zupfen und fein schneiden.
+            Piroggen mit Schmand servieren und mit Petersilie garnieren.
+        </p>
+      </section>
+
+      <section class="recipe-creator">
+        <h3>Rezept erstellt von</h3>
+
+        <div class="profile">
+          <img class="profile-icon" src="./img/profile.png" alt="" />
+          <p>Marcel Zielonka</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="px-160">
+      <img src="./img/logo.png" alt="logo" />
+
+      <div class="social-links">
+        <a href="https://facebook.com" target="_blank"
+          ><img src="./img/facebook-logo.png" alt=""
+        /></a>
+        <a href="https://instagram.com" target="_blank"
+          ><img src="./img/instagram-logo.png" alt=""
+        /></a>
+        <a href="https://x.com" target="_blank"
+          ><img src="./img/x-logo.png" alt=""
+        /></a>
+      </div>
+    </footer>
+  </body>
+  <script src="zutaten_tabelle.js"></script>
+</html>

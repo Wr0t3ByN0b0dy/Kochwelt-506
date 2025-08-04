@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   font-family: "Raleway", sans-serif;
@@ -137,11 +140,17 @@ footer {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(35, 35, 35);
+  padding-top: 50px;
+  padding-bottom: 50px;
   margin-top: 16px;
 }
 
+footer img{
+  height: 88px;
+}
+
 .social-links img {
-  height: 64px;
+  height: 58px;
 }
 
 /*Section Lust auf was Neues*/
@@ -197,14 +206,7 @@ p {
   font-size: 18px;
 }
 
-/*Section Footer*/
 
-.footer-container {
-  background-color: rgb(64, 59, 59);
-  height: 250px;
-  width: 100vw;
-  margin-bottom: 10px;
-}
 
 /*Section Recipe*/
 
@@ -317,6 +319,9 @@ input {
 }
 
 @media (max-width: 865px) {
+
+  
+
   .px-160 {
     padding-left: 40px;
     padding-right: 40px;
@@ -414,6 +419,13 @@ input {
     height: 150px;
     width: 150px;
   }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+  }
 }
 
 @media (max-width: 700px) {
@@ -464,5 +476,13 @@ input {
   .daily-recipe img {
     width: 200px;
     height: 130px;
+  }
+
+ footer img{
+  height: 70px;
+ }
+
+  .social-links img{
+    height: 46px;
   }
 }
