@@ -1,10 +1,13 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
   font-family: "Raleway", sans-serif;
   max-width: 1920px;
+}
+
+body {
+  overflow: hidden;
 }
 
 header {
@@ -16,7 +19,6 @@ header {
   padding-bottom: 5px;
   position: relative;
   height: 128px;
-  overflow: hidden;
 }
 
 h1 {
@@ -141,12 +143,45 @@ footer {
   margin-top: 16px;
 }
 
-footer img{
+footer img {
   height: 88px;
 }
 
 .social-links img {
   height: 58px;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 136px;
+  right: 0;
+  transition: all 250ms ease-in-out;
+  padding: 16px 16px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.mobile-link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mobile-link {
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(64, 59, 59);
+}
+.mobile-link:hover {
+  color: rgb(0, 128, 0);
+}
+
+.hide-on-desktop {
+  display: none;
+}
+
+.mobile-menu-closed {
+  transform: translateX(200%);
 }
 
 /*Section Lust auf was Neues*/
@@ -200,8 +235,6 @@ footer img{
 p {
   font-size: 18px;
 }
-
-
 
 /*Section Recipe*/
 
@@ -343,9 +376,6 @@ input {
 }
 
 @media (max-width: 865px) {
-
-  
-
   .px-160 {
     padding-left: 40px;
     padding-right: 40px;
@@ -379,6 +409,30 @@ input {
 
 /*Media Query start page*/
 
+/*Start Media Header*/
+@media (max-width: 1385px) {
+  .head-img {
+    width: 350px;
+  }
+  .header-link {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1020px) {
+  .head-img {
+    width: 250px;
+  }
+}
+@media (max-width: 920px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .hide-on-desktop {
+    display: block;
+  }
+}
+/*End Media Header*/
+
 @media (max-width: 1180px) {
   .px-160 {
     padding-left: 80px;
@@ -397,8 +451,8 @@ input {
   }
 
   .lust-auf-neues-div {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
@@ -458,7 +512,6 @@ input {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    
   }
 }
 
@@ -525,11 +578,11 @@ input {
     height: 130px;
   }
 
- footer img{
-  height: 70px;
- }
+  footer img {
+    height: 70px;
+  }
 
-  .social-links img{
+  .social-links img {
     height: 46px;
   }
   .gulasch-div {
@@ -545,10 +598,10 @@ input {
   .gulasch-div {
     flex-direction: column;
     width: 190px;
-}
+  }
 
   .start-page-h2 {
-  padding-left: 30px;
-  padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
