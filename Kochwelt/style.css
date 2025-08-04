@@ -339,9 +339,6 @@ input {
 }
 
 @media (max-width: 865px) {
-
-  
-
   .px-160 {
     padding-left: 40px;
     padding-right: 40px;
@@ -505,6 +502,12 @@ input {
   }
 }
 
+@media (max-width: 440px) {
+.impressum-h1 {
+ font-size: 26px;
+ }
+}
+
 @media (max-width: 380px) {
   .daily-recipe img {
     width: 200px;
@@ -537,4 +540,12 @@ input {
   padding-left: 30px;
   padding-right: 30px;
   }
-}
+
+
+  @media (max-width:330px) {
+
+
+
+  }
+  
+ }
