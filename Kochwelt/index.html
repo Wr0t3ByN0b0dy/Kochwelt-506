@@ -7,14 +7,13 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" type="image/png" href="./img/logo_small.png" />
 
-    
     <title>Kochwelt</title>
   </head>
 
   <body>
     <header class="px-160">
       <a href="./index.html"
-        ><img src="./img/logo.png" alt="Kochwelt logo"
+        ><img class="head-img" src="./img/logo.png" alt="Kochwelt logo"
       /></a>
       <nav class="hide-on-mobile">
         <ul class="link-list">
@@ -28,6 +27,19 @@
           <li><a class="header-link" href="./impressum.html">Impressum</a></li>
         </ul>
       </nav>
+
+      <button onclick="toggleMenu()" class="hide-on-desktop">
+        <img src="./img/icons/Burger-Menusvg.svg" alt="" />
+      </button>
+
+      <div id="menu-box" class="mobile-menu mobile-menu-closed hide-on-desktop">
+        <nav class="mobile-link-list">
+          <a class="mobile-link" href="#">Start</a>
+          <a class="mobile-link" href="#">Rezept des Tages</a>
+          <a class="mobile-link" href="./kontakt.html">Kontakt</a>
+          <a class="mobile-link" href="#">Impressum</a>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -37,9 +49,11 @@
         <div class="daily-recipe-text">
           <h1>Griechischer Bauernsalat</h1>
           <p>
-          Frisch, leicht und voller Geschmack: Der klassische griechische Bauernsalat ist ideal für die Sommerzeit. 
-          Mit sonnengereiften Tomaten, knackigen Gurken, Paprika, roten Zwiebeln, Oliven und cremigem Feta bringt er
-          mediterranes Urlaubsgefühl direkt auf den Teller. Einfach lecker!
+            Frisch, leicht und voller Geschmack: Der klassische griechische
+            Bauernsalat ist ideal für die Sommerzeit. Mit sonnengereiften
+            Tomaten, knackigen Gurken, Paprika, roten Zwiebeln, Oliven und
+            cremigem Feta bringt er mediterranes Urlaubsgefühl direkt auf den
+            Teller. Einfach lecker!
           </p>
           <div class="daily-recipe-button">
             <a href="recipe.html"
@@ -111,10 +125,23 @@
       <img src="./img/logo.png" alt="logo" />
 
       <div class="social-links">
-        <a href="https://facebook.com" target="_blank"><img src="./img/facebook-logo.png" alt="facebook-logo"/></a>
-        <a href="https://instagram.com" target="_blank"><img src="./img/instagram-logo.png" alt="instagram-logo"/></a>
-        <a href="https://x.com" target="_blank"><img src="./img/x-logo.png" alt="x-logo"/></a>
+        <a href="https://facebook.com" target="_blank"
+          ><img src="./img/facebook-logo.png" alt="facebook-logo"
+        /></a>
+        <a href="https://instagram.com" target="_blank"
+          ><img src="./img/instagram-logo.png" alt="instagram-logo"
+        /></a>
+        <a href="https://x.com" target="_blank"
+          ><img src="./img/x-logo.png" alt="x-logo"
+        /></a>
       </div>
     </footer>
   </body>
+  <script>
+    function toggleMenu() {
+      document
+        .getElementById("menu-box")
+        .classList.toggle("mobile-menu-closed");
+    }
+  </script>
 </html>
