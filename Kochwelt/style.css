@@ -660,6 +660,7 @@ input {
     padding-right: 30px;
   }
 
-  @media (max-width: 330px) {
+  .break-e-mail {
+word-break: break-word;
   }
 }
