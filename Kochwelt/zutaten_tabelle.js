@@ -119,3 +119,8 @@ function IngredientGulasch(event){
   }
   hintergrundfarbe(tabelle)
 }
+
+function toggleMenu() {
+      document.getElementById("menu-box")
+      .classList.toggle("mobile-menu-closed");
+    }
