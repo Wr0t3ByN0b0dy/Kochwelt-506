@@ -192,8 +192,8 @@ footer img {
 
 .mobile-menu-closed {
   transform: translateX(200%);
+  display: block;
 }
-
 /*Section Lust auf was Neues*/
 .section-lust-auf-neues {
   background-color: rgb(240, 240, 240);
