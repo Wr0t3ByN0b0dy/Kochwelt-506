@@ -8,7 +8,6 @@
     <link rel="icon" type="image/png" href="./img/logo_small.png" />
 
     <title>Rezept</title>
-
   </head>
   <body>
     <header class="px-160">
@@ -21,7 +20,9 @@
             <a class="header-link" href="./index.html">Start</a>
           </li>
           <li>
-            <a class="header-link current-page" href="./recipe.html">Rezept des Tages</a>
+            <a class="header-link current-page" href="./recipe.html"
+              >Rezept des Tages</a
+            >
           </li>
           <li><a class="header-link" href="./kontakt.html">Kontakt</a></li>
           <li><a class="header-link" href="./impressum.html">Impressum</a></li>
@@ -34,8 +35,10 @@
 
       <div id="menu-box" class="mobile-menu mobile-menu-closed hide-on-desktop">
         <nav class="mobile-link-list">
-          <a class="mobile-link current-page" href="#">Start</a>
-          <a class="mobile-link" href="./recipe.html">Rezept des Tages</a>
+          <a class="mobile-link" href="./index.html">Start</a>
+          <a class="mobile-link current-page" href="./recipe.html"
+            >Rezept des Tages</a
+          >
           <a class="mobile-link" href="./kontakt.html">Kontakt</a>
           <a class="mobile-link" href="./impressum.html">Impressum</a>
         </nav>
@@ -45,7 +48,11 @@
     <main class="px-160">
       <section class="griechischer-bauernsalat">
         <h1>Grieschischer Bauernsalat</h1>
-        <img class="griechischer-bauernsalat-img" src="./img/salad.jpg" alt="salad"/>
+        <img
+          class="griechischer-bauernsalat-img"
+          src="./img/salad.jpg"
+          alt="salad"
+        />
 
         <small>
           <span>
@@ -67,41 +74,54 @@
       <section class="recipe-table">
         <form class="input-button">
           <label for="amountInput">Zutaten für</label>
-          <input id="amountInput" type="number" min="1" value="4" required />
-          <button class="button-style" type="submit" onclick="IngredientSalad(event)">Portionen</button>
+          <input
+            class="rezept-input"
+            id="amountInput"
+            type="number"
+            min="1"
+            value="4"
+            required
+          />
+          <button
+            class="button-style"
+            type="submit"
+            onclick="IngredientSalad(event)"
+          >
+            Portionen
+          </button>
         </form>
 
         <table id="number-of-ingredient-for-salad">
-            <tr>
-              <td class="table-bg"> 1 Salatgurke(n)</td>
-            </tr>
-            <tr>
-              <td> 2 Paprikaschot(n), rot und grün </td>
-            </tr>
-            <tr>
-                <td class="table-bg">500g Tomate(n) </td>
-            </tr>
-            <tr>
-              <td> 2 Zwiebel(n)</td>
-            </tr>
-            <tr>
-              <td class="table-bg"> 200g Schafskäse(n)</td>
-            </tr>
-            <tr>
-              <td> 1 Glas Oliven, schwarze, ca 100g </td>
-            </tr>
-            <tr>
-              <td class="table-bg">Salz und Pfeffer</td>
-            </tr>
-            <tr>
-              <td> 1 Zitrone(n)</td>
-            </tr>
-            <tr>
-              <td class="table-bg"> 125ml Olivenöl</td>
-            </tr>
-            <tr>
-              <td>Oregano </td>
-            </tr>
+          <tr>
+            <td class="table-bg">1 Salatgurke(n)</td>
+          </tr>
+          <tr>
+            <td>2 Paprikaschot(n), rot und grün</td>
+          </tr>
+          <tr>
+            <td class="table-bg">500g Tomate(n)</td>
+          </tr>
+          <tr>
+            <td>2 Zwiebel(n)</td>
+          </tr>
+          <tr>
+            <td class="table-bg">200g Schafskäse(n)</td>
+          </tr>
+          <tr>
+            <td>1 Glas Oliven, schwarze, ca 100g</td>
+          </tr>
+          <tr>
+            <td class="table-bg">Salz und Pfeffer</td>
+          </tr>
+          <tr>
+            <td>1 Zitrone(n)</td>
+          </tr>
+          <tr>
+            <td class="table-bg">125ml Olivenöl</td>
+          </tr>
+          <tr>
+            <td>Oregano</td>
+          </tr>
         </table>
       </section>
 
@@ -118,7 +138,15 @@
           </span>
         </small>
 
-        <p>Gurke waschen und ungeschält in dünne Scheiben oder Stücke schneiden. Paprika Waschen, entkernen und in dünne Streifen schneiden. Tomaten waschen und achteln. zwiebeln schälen und in feine Ringe schneiden. Schafskäse würfeln und mit Oregano bstreuen. Oliven abgießen und mit Gurke, Paprika, Tomaten, Zwiebeln und Schafskäse in eine Schüssel geben. Olivenöl, Zitronensaft, Salz und Pfeffer zu einer Sauce verrühren und über den Salat gießen. Umrühren.</p>
+        <p>
+          Gurke waschen und ungeschält in dünne Scheiben oder Stücke schneiden.
+          Paprika Waschen, entkernen und in dünne Streifen schneiden. Tomaten
+          waschen und achteln. zwiebeln schälen und in feine Ringe schneiden.
+          Schafskäse würfeln und mit Oregano bstreuen. Oliven abgießen und mit
+          Gurke, Paprika, Tomaten, Zwiebeln und Schafskäse in eine Schüssel
+          geben. Olivenöl, Zitronensaft, Salz und Pfeffer zu einer Sauce
+          verrühren und über den Salat gießen. Umrühren.
+        </p>
       </section>
 
       <section class="recipe-creator">

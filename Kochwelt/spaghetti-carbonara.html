@@ -33,7 +33,7 @@
 
       <div id="menu-box" class="mobile-menu mobile-menu-closed hide-on-desktop">
         <nav class="mobile-link-list">
-          <a class="mobile-link current-page" href="#">Start</a>
+          <a class="mobile-link" href="./index.html">Start</a>
           <a class="mobile-link" href="./recipe.html">Rezept des Tages</a>
           <a class="mobile-link" href="./kontakt.html">Kontakt</a>
           <a class="mobile-link" href="./impressum.html">Impressum</a>
@@ -70,31 +70,45 @@
       <section class="recipe-table">
         <form class="input-button">
           <label for="amountInput">Zutaten für</label>
-          <input id="amountInput" type="number" min="1" value="1" required />
-          <button class="button-style" type="submit" onclick="IngredientSpaghetti(event)">Portionen</button>
+          <input
+            class="rezept-input"
+            id="amountInput"
+            type="number"
+            min="1"
+            value="1"
+            required
+          />
+          <button
+            class="button-style"
+            type="submit"
+            onclick="IngredientSpaghetti(event)"
+          >
+            Portionen
+          </button>
         </form>
 
-        <table id="number-of-ingredient-for-spaghetti" >
-            <tr>
-              <td class="table-bg">100g Spaghetti oder Tortellini</td>
-            </tr>
-            <tr>
-              <td>50g Schinken</td>
-            </tr>
-            <tr>
-              <td class="table-bg">1 Eigelb</td>
-            </tr>
-            <tr><td>12.5g Butter</td>
-            </tr>
-            <tr>
-              <td class="table-bg">1 Prise Salz und Pfeffer</td>
-            </tr>
-            <tr>
-              <td>0.25 Prise Muskat</td>
-            </tr>
-            <tr>
-              <td class="table-bg">1 Parmesan</td>
-            </tr>
+        <table id="number-of-ingredient-for-spaghetti">
+          <tr>
+            <td class="table-bg">100g Spaghetti oder Tortellini</td>
+          </tr>
+          <tr>
+            <td>50g Schinken</td>
+          </tr>
+          <tr>
+            <td class="table-bg">1 Eigelb</td>
+          </tr>
+          <tr>
+            <td>12.5g Butter</td>
+          </tr>
+          <tr>
+            <td class="table-bg">1 Prise Salz und Pfeffer</td>
+          </tr>
+          <tr>
+            <td>0.25 Prise Muskat</td>
+          </tr>
+          <tr>
+            <td class="table-bg">1 Parmesan</td>
+          </tr>
         </table>
       </section>
 

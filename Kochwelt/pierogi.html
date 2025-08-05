@@ -33,7 +33,7 @@
 
       <div id="menu-box" class="mobile-menu mobile-menu-closed hide-on-desktop">
         <nav class="mobile-link-list">
-          <a class="mobile-link current-page" href="#">Start</a>
+          <a class="mobile-link" href="./index.html">Start</a>
           <a class="mobile-link" href="./recipe.html">Rezept des Tages</a>
           <a class="mobile-link" href="./kontakt.html">Kontakt</a>
           <a class="mobile-link" href="./impressum.html">Impressum</a>
@@ -44,7 +44,11 @@
     <main class="px-160">
       <section class="griechischer-bauernsalat">
         <h1>Polnische Pierogi</h1>
-        <img class="griechischer-bauernsalat-img" src="./img/Pierogi.jpg" alt="Pierogi"/>
+        <img
+          class="griechischer-bauernsalat-img"
+          src="./img/Pierogi.jpg"
+          alt="Pierogi"
+        />
 
         <small>
           <span>
@@ -66,47 +70,60 @@
       <section class="recipe-table">
         <form class="input-button">
           <label for="amountInput">Zutaten für</label>
-          <input id="amountInput" type="number" min="1" value="4" required />
-          <button class="button-style" type="submit" onclick="IngredientPierogi(event)">Portionen</button>
+          <input
+            class="rezept-input"
+            id="amountInput"
+            type="number"
+            min="1"
+            value="4"
+            required
+          />
+          <button
+            class="button-style"
+            type="submit"
+            onclick="IngredientPierogi(event)"
+          >
+            Portionen
+          </button>
         </form>
 
-        <table id="number-of-ingredient-for-pierogi" >
-            <tr>
-              <td class="table-bg"> 250g Weizenmehl</td>
-            </tr>
-            <tr>
-              <td> 1 Ei </td>
-            </tr>
-            <tr>
-                <td class="table-bg"> 0,5 Prisen Salz für den Nudelteig </td>
-            </tr>
-            <tr>
-              <td> 200g Kartoffeln, mehlig kochend</td>
-            </tr>
-            <tr>
-              <td class="table-bg"> Salz</td>
-            </tr>
-            <tr>
-              <td> 150g Schichtkäse </td>
-            </tr>
-            <tr>
-              <td class="table-bg"> 1 Zwiebel</td>
-            </tr>
-            <tr>
-              <td> 50g Butter</td>
-            </tr>
-            <tr>
-              <td class="table-bg"> Pfeffer</td>
-            </tr>
-            <tr>
-              <td> 4 Zweige Petersilie </td>
-            </tr>
-            <tr>
-              <td class="table-bg"> 50g Schmand </td>
-            </tr>
-            <tr>
-              <td>Mehl, für die Arbeitsfläche </td>
-            </tr>
+        <table id="number-of-ingredient-for-pierogi">
+          <tr>
+            <td class="table-bg">250g Weizenmehl</td>
+          </tr>
+          <tr>
+            <td>1 Ei</td>
+          </tr>
+          <tr>
+            <td class="table-bg">0,5 Prisen Salz für den Nudelteig</td>
+          </tr>
+          <tr>
+            <td>200g Kartoffeln, mehlig kochend</td>
+          </tr>
+          <tr>
+            <td class="table-bg">Salz</td>
+          </tr>
+          <tr>
+            <td>150g Schichtkäse</td>
+          </tr>
+          <tr>
+            <td class="table-bg">1 Zwiebel</td>
+          </tr>
+          <tr>
+            <td>50g Butter</td>
+          </tr>
+          <tr>
+            <td class="table-bg">Pfeffer</td>
+          </tr>
+          <tr>
+            <td>4 Zweige Petersilie</td>
+          </tr>
+          <tr>
+            <td class="table-bg">50g Schmand</td>
+          </tr>
+          <tr>
+            <td>Mehl, für die Arbeitsfläche</td>
+          </tr>
         </table>
       </section>
 
@@ -124,25 +141,75 @@
         </small>
 
         <ol>
-            <li>Für den Nudelteig Mehl in eine Schüssel sieben, in der Mitte eine Mulde formen und das Ei, 100 ml (für 4 Portionen) kaltes Wasser sowie Salz hineingeben. Vom Rand aus etwas Mehl ins Wasser rühren, dann nach und nach weiteres Mehl einarbeiten, bis ein homogener Teig entstanden ist. Teig nochmals 2 Minuten durchkneten und anschließend abgedeckt 30 Minuten im Kühlschrank ruhen lassen.</li>
-            <li>Inzwischen für die Füllung Kartoffeln schälen, waschen, kleinschneiden und ca. 5-6 Minuten in Salzwasser weichkochen. Anschließend Kartoffeln abgießen und ausdampfen, dann mit Schichtkäse stampfen. Zwiebel abziehen und fein würfeln, dann in einer Pfanne in Butter anschwitzen und etwa 10 Minuten bei kleiner Hitze hellbraun dünsten. Die Hälfte der Zwiebeln unter die Füllung heben und den Rest in der Pfanne bereithalten. Kartoffelmasse mit Salz sowie Pfeffer abschmecken.</li>
-            <li>Für die Piroggen Teig mit einer Teigrolle auf einer bemehlten Arbeitsfläche 2 mm dünn ausrollen. Mit einem runden Ausstecher oder einem Glas (10 cm ø) 24 Kreise ausstechen. Auf jeden Teigkreis einen Teelöffel Füllung geben: Teig über die Füllung zu Halbmonden verschließen.</li>
-            <li>Teigtaschen in ausreichend kochendem Salzwasser bei kleiner Hitze 6 Minuten garziehen bis sie an der Oberfläche schwimmen. Anschließend herausnehmen, abtropfen und in der restlichen Butter-Zwiebel Mischung anschwitzen</li>
-            <li>Für die Garnitur Petersilie waschen, nach Wunsch von den Stielen zupfen und fein schneiden.</li>
-            <li>Piroggen mit Schmand servieren und mit Petersilie garnieren.</li>
+          <li>
+            Für den Nudelteig Mehl in eine Schüssel sieben, in der Mitte eine
+            Mulde formen und das Ei, 100 ml (für 4 Portionen) kaltes Wasser
+            sowie Salz hineingeben. Vom Rand aus etwas Mehl ins Wasser rühren,
+            dann nach und nach weiteres Mehl einarbeiten, bis ein homogener Teig
+            entstanden ist. Teig nochmals 2 Minuten durchkneten und anschließend
+            abgedeckt 30 Minuten im Kühlschrank ruhen lassen.
+          </li>
+          <li>
+            Inzwischen für die Füllung Kartoffeln schälen, waschen,
+            kleinschneiden und ca. 5-6 Minuten in Salzwasser weichkochen.
+            Anschließend Kartoffeln abgießen und ausdampfen, dann mit
+            Schichtkäse stampfen. Zwiebel abziehen und fein würfeln, dann in
+            einer Pfanne in Butter anschwitzen und etwa 10 Minuten bei kleiner
+            Hitze hellbraun dünsten. Die Hälfte der Zwiebeln unter die Füllung
+            heben und den Rest in der Pfanne bereithalten. Kartoffelmasse mit
+            Salz sowie Pfeffer abschmecken.
+          </li>
+          <li>
+            Für die Piroggen Teig mit einer Teigrolle auf einer bemehlten
+            Arbeitsfläche 2 mm dünn ausrollen. Mit einem runden Ausstecher oder
+            einem Glas (10 cm ø) 24 Kreise ausstechen. Auf jeden Teigkreis einen
+            Teelöffel Füllung geben: Teig über die Füllung zu Halbmonden
+            verschließen.
+          </li>
+          <li>
+            Teigtaschen in ausreichend kochendem Salzwasser bei kleiner Hitze 6
+            Minuten garziehen bis sie an der Oberfläche schwimmen. Anschließend
+            herausnehmen, abtropfen und in der restlichen Butter-Zwiebel
+            Mischung anschwitzen
+          </li>
+          <li>
+            Für die Garnitur Petersilie waschen, nach Wunsch von den Stielen
+            zupfen und fein schneiden.
+          </li>
+          <li>Piroggen mit Schmand servieren und mit Petersilie garnieren.</li>
         </ol>
       </section>
 
       <section class="nutritional-values">
         <h2>Nährwerte</h2>
         <table>
-          <thead><tr><th>Nährwerte</th><th>pro Portion</th></tr></thead>
+          <thead>
+            <tr>
+              <th>Nährwerte</th>
+              <th>pro Portion</th>
+            </tr>
+          </thead>
           <tbody>
-            <tr><td>Energie</td><td>1.987 kj</td></tr>
-            <tr><td>kalorien</td><td>475 kcal</td></tr>
-            <tr><td>Kohlenhydrate</td><td>60 g</td></tr>
-            <tr><td>Fett</td><td>21 g</td></tr>
-            <tr><td>Eiweiß</td><td>14 g</td></tr>
+            <tr>
+              <td>Energie</td>
+              <td>1.987 kj</td>
+            </tr>
+            <tr>
+              <td>kalorien</td>
+              <td>475 kcal</td>
+            </tr>
+            <tr>
+              <td>Kohlenhydrate</td>
+              <td>60 g</td>
+            </tr>
+            <tr>
+              <td>Fett</td>
+              <td>21 g</td>
+            </tr>
+            <tr>
+              <td>Eiweiß</td>
+              <td>14 g</td>
+            </tr>
           </tbody>
         </table>
       </section>

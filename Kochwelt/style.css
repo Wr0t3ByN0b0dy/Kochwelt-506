@@ -99,7 +99,8 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .background-test {
@@ -308,7 +309,7 @@ small {
   padding-bottom: 12px;
 }
 
-input {
+.rezept-input {
   margin-left: 12px;
   height: 39px;
   border-radius: 8px 0 0 8px;
@@ -417,6 +418,8 @@ input {
   word-break: break-word;
 }
 
+@media (max-height: 550px) {
+}
 @media (max-width: 865px) {
   .px-160 {
     padding-left: 40px;
@@ -425,7 +428,7 @@ input {
 }
 
 @media (max-width: 625px) {
-  input {
+  .rezept-input {
     width: 70px;
   }
 
@@ -560,6 +563,14 @@ input {
     align-items: center;
     gap: 30px;
   }
+
+  .background-test {
+    width: 400px;
+  }
+
+  .kontakt-main h1 {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 660px) {
@@ -661,6 +672,18 @@ input {
   }
 
   .break-e-mail {
-word-break: break-word;
+    word-break: break-word;
+  }
+
+  .background-test {
+    width: 190px;
+  }
+
+  .kontakt-main h1 {
+    font-size: 24px;
+  }
+
+  .kontakt-main label {
+    font-size: 13px;
   }
 }
