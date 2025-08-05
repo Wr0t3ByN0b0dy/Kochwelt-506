@@ -43,6 +43,10 @@ h1 {
   color: rgb(64, 59, 59);
 }
 
+.logo-link {
+  align-self: center;
+}
+
 .header-link:hover {
   color: rgb(0, 128, 0);
 }
@@ -156,14 +160,20 @@ footer img {
   top: 136px;
   right: 0;
   transition: all 250ms ease-in-out;
-  padding: 16px 16px;
-  border: 1px solid rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(245, 243, 243);
+  box-shadow: 2px 2px 4px rgb(235, 233, 233);
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.menu-button {
+  align-self: center;
 }
 
 .mobile-link-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
 }
 
@@ -325,7 +335,7 @@ input {
   border-collapse: collapse;
 }
 
-.recipe-table td  {
+.recipe-table td {
   padding: 12px;
   border-radius: 8px;
 }
@@ -338,31 +348,31 @@ input {
   margin-bottom: 1em;
 }
 
-.prepare ol{
+.prepare ol {
   padding-left: 20px;
   padding-right: 20px;
 }
-.nutritional-values table{
+.nutritional-values table {
   border-collapse: collapse;
   width: 100%;
   margin-top: 12px;
   margin-bottom: 24px;
 }
-.nutritional-values thead{
+.nutritional-values thead {
   background-color: rgba(239, 239, 239, 255);
 }
 
 .nutritional-values td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: left;
-  }
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
 
-  .nutritional-values th {
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: left;
-  }
+.nutritional-values th {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
 
 /*Impressum*/
 
@@ -403,7 +413,7 @@ input {
   width: 600px;
 }
 
-.datenschutz-link a{
+.datenschutz-link a {
   word-break: break-word;
 }
 
@@ -434,9 +444,6 @@ input {
   .griechischer-bauernsalat h1 {
     font-size: 23px;
   }
-
-
-    
 }
 
 /*Media Query start page*/
@@ -595,9 +602,8 @@ input {
     padding-left: 50px;
     padding-right: 50px;
   }
-  
 }
-@media (max-width: 460px){
+@media (max-width: 460px) {
   small {
     display: grid;
     grid-template-columns: 0fr 0fr;
@@ -605,17 +611,17 @@ input {
 }
 
 @media (max-width: 440px) {
-.impressum-h1 {
- font-size: 26px;
- }
+  .impressum-h1 {
+    font-size: 26px;
+  }
 
- .impressum-h2 {
-  font-size: 20px;
- }
+  .impressum-h2 {
+    font-size: 20px;
+  }
 
- .impressum-h3 {
-font-size: 18px;
- }
+  .impressum-h3 {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 380px) {
@@ -651,11 +657,6 @@ font-size: 18px;
     padding-right: 30px;
   }
 
-
-  @media (max-width:330px) {
-
-
-
+  @media (max-width: 330px) {
   }
-  
- }
+}
