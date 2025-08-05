@@ -7,7 +7,7 @@
 }
 
 body {
-  overflow: hidden;
+ 
 }
 
 header {
@@ -339,11 +339,13 @@ input {
 .impressum-div {
   font-family: "Raleway", sans-serif;
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .impressum-h1 {
   text-align: left;
   padding-bottom: 26px;
+  font-size: 32px;
 }
 
 /*Gulaschsuppe*/
@@ -576,6 +578,14 @@ input {
 .impressum-h1 {
  font-size: 26px;
  }
+
+ .impressum-h2 {
+  font-size: 20px;
+ }
+
+ .impressum-h3 {
+font-size: 18px;
+ }
 }
 
 @media (max-width: 380px) {
@@ -610,12 +620,12 @@ input {
     padding-left: 30px;
     padding-right: 30px;
   }
+}
 
-
-  @media (max-width:330px) {
-
-
-
-  }
+  @media (max-width:350px) {
+.break-e-mail {
+word-break: break-word;
+}
+}
   
- }
+ 
