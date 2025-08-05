@@ -54,45 +54,43 @@
       </section>
 
       <section class="recipe-table">
-        <form class="input-button" id="portionForm" onsubmit="updateIngredients(event)">
+        <form class="input-button">
           <label for="amountInput">Zutaten für</label>
           <input id="amountInput" type="number" min="1" value="4" required />
-          <button class="button-style" type="submit">Portionen</button>
+          <button class="button-style" type="submit" onclick="IngredientSalad(event)">Portionen</button>
         </form>
 
-        <table id="number-of-ingredient">
-          <tbody id="zutaten-body">
+        <table id="number-of-ingredient-for-salad">
             <tr>
-              <td class="zutaten-menge" data-base="0.25" data-zutat="Salatgurke(n)"> 1 Salatgurke(n)</td>
+              <td class="table-bg"> 1 Salatgurke(n)</td>
             </tr>
             <tr>
-              <td class="zutaten-menge" data-base="0.5" data-zutat="Paprikaschot(n), rot und grün"> 2 Paprikaschot(n), rot und grün </td>
+              <td> 2 Paprikaschot(n), rot und grün </td>
             </tr>
             <tr>
-                <td class="zutaten-menge" data-base="125" data-zutat="Tomate(n)">500 g Tomate(n) </td>
+                <td class="table-bg">500g Tomate(n) </td>
             </tr>
             <tr>
-              <td class="zutaten-menge" data-base="0.5" data-zutat="Zwiebel(n)"> 2 Zwiebel(n)</td>
+              <td> 2 Zwiebel(n)</td>
             </tr>
             <tr>
-              <td class="zutaten-menge" data-base="50" data-zutat="g Schafskäse(n)"> 200 g Schafskäse(n)</td>
+              <td class="table-bg"> 200g Schafskäse(n)</td>
             </tr>
             <tr>
-              <td class="zutaten-menge" data-base="0.25" data-zutat="Glas Oliven, schwarze, ca 100g"> 1 Glas Oliven, schwarze, ca 100g </td>
+              <td> 1 Glas Oliven, schwarze, ca 100g </td>
             </tr>
             <tr>
-              <td class="zutaten-menge" data-base="" data-zutat="Salz und Pfeffer">Salz und Pfeffer</td>
+              <td class="table-bg">Salz und Pfeffer</td>
             </tr>
             <tr>
-              <td class="zutaten-menge" data-base="0.25" data-zutat="Zitrone(n)"> 1 Zitrone(n)</td>
+              <td> 1 Zitrone(n)</td>
             </tr>
             <tr>
-              <td class="zutaten-menge" data-base="31.25" data-zutat="ml Olivenöl"> 125 ml Olivenöl</td>
+              <td class="table-bg"> 125ml Olivenöl</td>
             </tr>
             <tr>
-              <td class="zutaten-menge" data-base="" data-zutat="Oregano">Oregano </td>
+              <td>Oregano </td>
             </tr>
-          </tbody>
         </table>
       </section>
 

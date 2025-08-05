@@ -43,9 +43,9 @@
 
         <span>
           <img src="./img/icons/brain-solid.svg" alt="" />
-          <p>mittel</p>
+          <p>medium</p>
         </span>
-        
+        <span>
           <img src="./img/icons/calendar-alt-regular.svg" alt="" />
           <p>04.08.2025</p>
         </span>
@@ -53,75 +53,49 @@
     </section>
 
     <section class="recipe-table">
-      <form class="input-button" id="portionForm" onsubmit="updateIngredients(event)">
-        <label for="amountInput">Zutaten für</label>
-        <input id="amountInput" type="number" min="1" value="1" required />
-        <button class="button-style" type="submit">Portionen</button>
-      </form>
+      <form class="input-button">
+          <label for="amountInput">Zutaten für</label>
+          <input id="amountInput" type="number" min="1" value="1" required />
+          <button class="button-style" type="submit" onclick="IngredientGulasch(event)">Portionen</button>
+        </form>
 
-      <table id="number-of-ingredient">
-        <tbody id="zutaten-body">
+      <table id="number-of-ingredient-for-gulasch">
           <tr>
-            <td class="zutaten-menge" data-base="125" data-zutat="g Rindergulasch">
-              125 g Rindergulsch
-            </td>
+            <td class="table-bg">125g Rindergulsch</td>
           </tr>
           <tr>
-            <td class="zutaten-menge" data-base="75" data-zutat="Zwiebeln">
-              75 g Zwiebeln
-            </td>
+            <td>75g Zwiebeln</td>
           </tr>
           <tr>
-            <td class="zutaten-menge" data-base="300" data-zutat="ml Rinder-Fond">
-              300 ml Rinderfond
-            </td>
+            <td class="table-bg">300ml Rinderfond</td>
           </tr>
           <tr>
-            <td class="zutaten-menge" data-base="38" data-zutat="g Karrotten">
-              38 g Karotten
-            </td>
+            <td>38g Karotten</td>
           </tr>
           <tr>
-            <td class="zutaten-menge" data-base="0.5" data-zutat="Stück Paprikaschote">
-              0.5 Stück Paprikaschote(n)
-            </td>
+            <td class="table-bg">0.5 Stück Paprikaschote(n)</td>
           </tr>
           <tr>
-            <td class="zutaten-menge" data-base="0.25" data-zutat="Stück Knoblauchzehe">
-              0.25 Stück Knoblauchzehe
-            </td>
+            <td>0.25 Stück Knoblauchzehe</td>
           </tr>
           <tr>
-            <td class="zutaten-menge" data-base="12.5" data-zutat="g Butterschmalz">
-              12.5 g Butterschmalz
-            </td>
+            <td class="table-bg">12.5g Butterschmalz</td>
           </tr>
           <tr>
-            <td class="zutaten-menge" data-base="2" data-zutat="Teelöffel Tomatenmark">
-              1 Teelöffel Tomatenmark
-            </td>
+            <td>1 Teelöffel Tomatenmark</td>
           </tr>
           <tr>
-            <td class="zutaten-menge" data-base="1" data-zutat="Teelöffel Paprikapulver edelsüß">
-              1 Teelöffel Paprikapulver edelsüß
-            </td>
+            <td class="table-bg">1 Teelöffel Paprikapulver edelsüß</td>
           </tr>
           <tr>
-            <td class="zutaten-menge" data-base="1" data-zutat="Petersilie frisch und glatt">
-              Petersilie frisch und glatt
-            </td>
+            <td>Petersilie frisch und glatt</td>
           </tr>
           <tr>
-            <td class="zutaten-menge" data-base="1" data-zutat="Spritzer Zitrone">
-              Spritzer Zitrone
-            </td>
+            <td class="table-bg">Spritzer Zitrone</td>
           </tr>
           <tr>
-            <td class="zutaten-menge" data-base="1" data-zutat="Majoran, Kümmel ganz, Loorbeerblätter, Salz und Pfeffer nach Bedarf">
-              Majoran, Kümmel ganz, Loorbeerblätter, Salz und Pfeffer nach Bedarf
-            </td>
+            <td>Majoran, Kümmel ganz, Loorbeerblätter, Salz und Pfeffer nach Bedarf</td>
           </tr>
-        </tbody>
       </table>
     </section>
 

@@ -55,66 +55,33 @@
       </section>
 
       <section class="recipe-table">
-        <form
-          class="input-button"
-          id="portionForm"
-          onsubmit="updateIngredients(event)"
-        >
+        <form class="input-button">
           <label for="amountInput">Zutaten für</label>
           <input id="amountInput" type="number" min="1" value="1" required />
-          <button class="button-style" type="submit">Portionen</button>
+          <button class="button-style" type="submit" onclick="IngredientSpaghetti(event)">Portionen</button>
         </form>
 
-        <table id="number-of-ingredient">
-          <tbody id="zutaten-body">
+        <table id="number-of-ingredient-for-spaghetti" >
             <tr>
-              <td
-                class="zutaten-menge"
-                data-base="100"
-                data-zutat="g Spaghetti oder Tortellini"
-              >
-                100 g Spaghetti oder Tortellini
-              </td>
+              <td class="table-bg">100g Spaghetti oder Tortellini</td>
             </tr>
             <tr>
-              <td class="zutaten-menge" data-base="50" data-zutat="g Schinken">
-                50 g Schinken
-              </td>
+              <td>50g Schinken</td>
             </tr>
             <tr>
-              <td class="zutaten-menge" data-base="1" data-zutat="Eigelb">
-                1 Eigelb
-              </td>
+              <td class="table-bg">1 Eigelb</td>
+            </tr>
+            <tr><td>12.5g Butter</td>
             </tr>
             <tr>
-              <td class="zutaten-menge" data-base="12.5" data-zutat="g Butter">
-                12.5 g Butter
-              </td>
+              <td class="table-bg">1 Prise Salz und Pfeffer</td>
             </tr>
             <tr>
-              <td
-                class="zutaten-menge"
-                data-base="1"
-                data-zutat="Prise Salz und Pfeffer"
-              >
-                1 Prise Salz und Pfeffer
-              </td>
+              <td>0.25 Prise Muskat</td>
             </tr>
             <tr>
-              <td
-                class="zutaten-menge"
-                data-base="0.25"
-                data-zutat="Prise Muskat"
-              >
-                0.25 Prise Muskat
-              </td>
+              <td class="table-bg">1 Parmesan</td>
             </tr>
-            <tr>
-              <td class="zutaten-menge" data-base="1" data-zutat="Parmesan">
-                1 Parmesan
-              </td>
-            </tr>
-          </tbody>
         </table>
       </section>
 

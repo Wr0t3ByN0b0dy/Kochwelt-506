@@ -7,7 +7,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header {
@@ -325,7 +325,7 @@ input {
   border-collapse: collapse;
 }
 
-.zutaten-menge {
+.recipe-table td  {
   padding: 12px;
   border-radius: 8px;
 }
@@ -333,6 +333,36 @@ input {
 .table-bg {
   background-color: rgba(239, 239, 239, 255);
 }
+
+.prepare ol li {
+  margin-bottom: 1em;
+}
+
+.prepare ol{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.nutritional-values table{
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+.nutritional-values thead{
+  background-color: rgba(239, 239, 239, 255);
+}
+
+.nutritional-values td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .nutritional-values th {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
 
 /*Impressum*/
 
@@ -609,13 +639,6 @@ input {
   .start-page-h2 {
     padding-left: 30px;
     padding-right: 30px;
-  }
-
-
-  @media (max-width:330px) {
-
-
-
   }
   
  }
