@@ -25,6 +25,8 @@ header {
   border-bottom: 1px solid rgb(245, 243, 243);
   box-shadow: 2px 2px 4px rgb(235, 233, 233);
   padding-bottom: 5px;
+  position: relative;
+  height: 128px;
 }
 
 
