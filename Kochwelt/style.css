@@ -3,12 +3,20 @@
 * {
   margin: 0;
   font-family: "Raleway", sans-serif;
-  max-width: 1920px;
 }
 
 body {
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
+
+main {
+  max-width: 1920px;
+  margin: 0 auto;
+  min-height: calc(100vh - 318px);
+}
+
 
 header {
   display: flex;
@@ -17,9 +25,8 @@ header {
   border-bottom: 1px solid rgb(245, 243, 243);
   box-shadow: 2px 2px 4px rgb(235, 233, 233);
   padding-bottom: 5px;
-  position: relative;
-  height: 128px;
 }
+
 
 h1 {
   padding-bottom: 26px;
@@ -145,7 +152,7 @@ footer {
   background-color: rgb(35, 35, 35);
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-top: 16px;
+  margin-top: auto;
 }
 
 footer img {
@@ -199,7 +206,8 @@ footer img {
 }
 /*Section Lust auf was Neues*/
 .section-lust-auf-neues {
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(240, 240, 240); 
+  max-width:
 }
 
 .start-page-h2 {
@@ -307,8 +315,9 @@ small {
   gap: 24px;
 }
 
-.recipe-creator h3 {
-  padding-bottom: 12px;
+.recipe-creator .profile {
+  padding-top: 12px;
+  padding-bottom: 30px;
 }
 
 .rezept-input {
@@ -689,3 +698,4 @@ small {
     font-size: 13px;
   }
 }
+

@@ -68,7 +68,7 @@
     <section class="recipe-table">
       <form class="input-button">
           <label for="amountInput">Zutaten für</label>
-          <input class="rezept-input" id="amountInput" type="number" min="1" value="1" required />
+          <input class="rezept-input" id="amountInput" type="number" min="1" max="20" oninput="limitInput(this)" value="1" required />
           <button class="button-style" type="submit" onclick="IngredientGulasch(event)">Portionen</button>
         </form>
 

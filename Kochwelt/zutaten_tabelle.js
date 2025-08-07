@@ -8,6 +8,14 @@ function hintergrundfarbe(tabelle) {
   }
 }
 
+function limitInput(input) {
+  if (input.value > 20) {
+    input.value = 20;
+  } else if (input.value < 1) {
+    input.value = 1;
+  }
+}
+
 let ingredientsForPierogi = [
   "g Weizenmehl",
   "Ei",
